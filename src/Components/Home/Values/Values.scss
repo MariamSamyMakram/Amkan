@@ -1,0 +1,78 @@
+.Values{
+    h1{
+        color: #DAB469;
+        text-transform: uppercase;
+        font-size: 34px;
+        font-weight: bold;
+        text-align: center;
+    }
+    ul{
+        li{
+            // margin-left: 15px;
+            // margin-right: 15px;
+            h2{
+                color: #dab469;
+                font-size: 90px;
+            }
+            .square_title{
+                color: #000;
+                background-color: #dab469;
+                padding: 8px;
+            }
+            p{
+                color: #fff;
+                width: 200px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575.98px){
+    .Values{
+        ul{
+            li{
+                p{width: 100%;}
+            }
+        }
+    }
+
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .Values{
+        ul{
+            padding: 0 90px;
+            li{
+                p{width: 100%;}
+            }
+        }
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .Values{
+        ul{
+            padding: 0 90px;
+            li{
+                p{width: 100%;}
+            }
+        }
+    }
+}
+
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .Values{
+        ul{
+            li{
+                .square_title{font-size: 12px;}
+                p{width: 165px;font-size: 12px;}
+            }
+        }
+    }
+}

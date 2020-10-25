@@ -1,0 +1,55 @@
+.Vision{
+    background-color: rgba(0,0,0,0.6);
+    img{
+        width: 100%;
+        object-fit: contain;
+    }
+    .nav-tabs {
+        border-bottom: none;
+        margin-bottom: 20px;
+        .nav-link.active {
+            background-color: transparent;
+            border-color: transparent;
+            border-bottom: 2px solid !important;
+            color: rgba($color: #DAB469, $alpha: 1);
+        }
+        .nav-link {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            color: rgba($color: #DAB469, $alpha: 0.5);
+            font-size: 32px;
+            padding: 0;
+            margin-right: 35px;
+            border: 0;
+            &:hover{border: 0;}
+            &:focus{border: 0; box-shadow: none;}
+        }
+    }
+    .tab-content{
+        p{
+            font-size: 15px;
+            color: #fff;
+        }
+    }
+}
+
+@media (max-width: 575.98px){
+    .Vision{
+        .nav-tabs{
+            .nav-link{
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .Vision{
+        .nav-tabs{
+            .nav-link{
+                font-size: 25px;
+            }
+        }
+    }
+}
