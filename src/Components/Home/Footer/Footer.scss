@@ -1,0 +1,30 @@
+.footer{
+    background-color: #000;
+    color: #fff;
+    p{font-size: 13px;}
+    a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 13px;
+    }
+    svg{
+        font-size: 40px;
+        padding: 10px;
+        border: 1px solid;
+        color: #DAB469;
+    }
+    .form-control{
+        padding: 1.5rem .75rem;
+        color: #dab469;
+        background-color: transparent;
+        border: 1px solid #dab469;
+        border-radius: 0;
+    }
+    .input-group-text{
+        color: #dab469;
+        background-color: transparent;
+        border: 1px solid #dab469;
+        border-radius: 0;
+        cursor: pointer;
+    }
+}
