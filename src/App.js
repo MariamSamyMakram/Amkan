@@ -18,7 +18,7 @@ import Header from './Components/Home/Header/Header';
 // pages
 import Home from './Pages/Home';
 import About from './Pages/About';
-import Strategy from './Pages/Strategy';
+import Strategies from './Pages/Strategies';
 import Team from './Pages/Team';
 import Contact from './Pages/Contact';
 import Clients from './Pages/Clients';
@@ -47,7 +47,7 @@ function App() {
                       <Team />
                   </Route>
                   <Route path="/strategy">
-                      <Strategy />
+                      <Strategies />
                   </Route>
                   <Route path="/about">
                       <About />

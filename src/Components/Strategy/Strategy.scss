@@ -1,0 +1,39 @@
+.Strategy{
+    h1{
+        color: #DAB469;
+        text-transform: uppercase;
+        font-size: 34px;
+        font-weight: bold;
+    }
+    p{color: #fff;}
+    ul{
+        li{
+            background-color: rgba(0,0,0,0.8);
+            border-radius: 8px;
+            margin: 15px;
+            img{
+                margin-bottom: 20px;
+            }
+            h5{
+                font-size: 16px;
+                color: #DAB469;
+            }
+            p{
+                font-size: 13px;
+                color: #fff;
+            }
+        }
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .Strategy{
+        ul{
+            li{
+                h5{font-size: 12px;}
+                font-size: 11px;
+            }
+        }
+    }
+}
