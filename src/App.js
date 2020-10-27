@@ -21,7 +21,7 @@ import About from './Pages/About';
 import Strategies from './Pages/Strategies';
 import Team from './Pages/Team';
 import Contact from './Pages/Contact';
-import Clients from './Pages/Clients';
+import Client from './Pages/Client';
 
 
 // Footer
@@ -41,7 +41,7 @@ function App() {
                       <Contact />
                   </Route>
                   <Route path="/clients">
-                      <Clients />
+                      <Client />
                   </Route>
                   <Route path="/team">
                       <Team />
