@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import {Container , Navbar, Nav ,NavLink} from 'react-bootstrap';
-
+import {Container , Navbar, Nav } from 'react-bootstrap';
+import {NavLink} from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
@@ -21,12 +21,12 @@ class Header extends Component{
                         </Navbar.Toggle>
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="ml-auto">
-                                <NavLink   href="#home">Home</NavLink>
-                                <NavLink  href="#link">About</NavLink>
-                                <NavLink  href="#link1">Strategy</NavLink>
-                                <NavLink  href="#link2">Team</NavLink>
-                                <NavLink  href="#link3">Clients / Partners</NavLink>
-                                <NavLink  href="#link4">Contact Us</NavLink>
+                                <NavLink className="nav-link" exact to="/">Home</NavLink>
+                                <NavLink className="nav-link"  to="/about">About</NavLink>
+                                <NavLink className="nav-link"  to="/strategy">Strategy</NavLink>
+                                <NavLink className="nav-link"  to="/team">Team</NavLink>
+                                <NavLink className="nav-link"  to="/clients">Clients / Partners</NavLink>
+                                <NavLink className="nav-link"  to="/contact">Contact Us</NavLink>
                             </Nav>
                         </Navbar.Collapse>
                     </Navbar>
