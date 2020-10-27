@@ -13,30 +13,31 @@ class FormContact extends Component{
             <section className="FormContact pt-5 pb-5 mt-md-5">
                 <Container>
                     <Row>
-                        <Col lg={6} md={6} className="mt-5">
+                        <Col lg={1}></Col>
+                        <Col lg={5} md={6} className="mt-5">
                             <h1 className="mb-4">Contact Us</h1>
                             <ul className="mb-0 list-unstyled p-0">
                                 <li>
                                     <Row>
                                         <Col lg={2} xs={4}><div className="square"><FontAwesomeIcon icon={faPhoneAlt}/></div></Col>
-                                        <Col lg={9} xs={8} className="d-flex justify-content-start align-items-center pl-0 pr-0"><p>+971 123 456 789</p></Col>
+                                        <Col lg={10} xs={8} className="d-flex justify-content-start align-items-center"><p>+971 123 456 789</p></Col>
                                     </Row>
                                 </li>
                                 <li>
                                     <Row>
                                         <Col lg={2} xs={4}><div className="square"><FontAwesomeIcon icon={faEnvelope}/></div></Col>
-                                        <Col lg={9} xs={8} className="d-flex justify-content-start align-items-center pl-0 pr-0"><a href="#">info@amkan.com</a></Col>
+                                        <Col lg={10} xs={8} className="d-flex justify-content-start align-items-center"><a href="#">info@amkan.com</a></Col>
                                     </Row>
                                 </li>
                                 <li>
                                     <Row>
                                         <Col lg={2} xs={4}><div className="square"><FontAwesomeIcon icon={faMapMarkerAlt}/></div></Col>
-                                        <Col lg={9} xs={8} className="d-flex justify-content-start align-items-center pl-0 pr-0"><p>102 street 2300</p></Col>
+                                        <Col lg={10} xs={8} className="d-flex justify-content-start align-items-center"><p>102 street 2300</p></Col>
                                     </Row>
                                 </li>
                             </ul>
                         </Col>
-                        <Col lg={6} md={6} className="mt-5">
+                        <Col lg={5} md={6} className="mt-5">
                             <Form>
                                 <Form.Group controlId="formBasicEmail">
                                     <Form.Control type="email" placeholder="Name" />
@@ -51,6 +52,7 @@ class FormContact extends Component{
                             </Form>
 
                         </Col>
+                        <Col lg={1}></Col>
                     </Row>
                 </Container>
             </section>
