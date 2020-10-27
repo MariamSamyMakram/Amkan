@@ -1,11 +1,14 @@
+@import './../../ColorFonts.scss';
+
 .HeaderTop{
-    background-color: rgba($color: #000000, $alpha: 0.9);
-    .in{color: #fff;text-decoration: none;}
-    li{color: #fff;}
+    font-family: 'Lota';
+    background-color: rgba($color: $black, $alpha: 0.9);
+    .in{color: $white;text-decoration: none;}
+    li{color: $white;}
     .btn{
         background-color: transparent;
         border-color: transparent;
-        color: #fff;
+        color: $white;
         font-size: 14px;
         padding: 0;
         // margin-left: 10px;

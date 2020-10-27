@@ -1,3 +1,5 @@
+@import './../../ColorFonts.scss';
+
 .header{
     position: absolute;
     left: 0;
@@ -8,10 +10,11 @@
         object-fit: contain;
     }
     .nav-link{
-        color: #fff !important;
+        color: $white !important;
         cursor: pointer;
         padding: 0 20px !important;
         position: relative;
+        font-family: 'Lota';
         &::after{
             content: ' ';
             position: absolute;
@@ -19,15 +22,16 @@
             bottom: 0;
             width: 0px;
             height: 2px;
-            background-color: #DAB469;
+            background-color: $yollow;
             opacity: 0;
             transition: ease width 0.5s;
             transition: ease opacity 0.5s;
         }
     }
     .active{
-        color: #DAB469 !important;
+        color: $yollow !important;
         position: relative;
+        font-family: 'Lota';
         &::after{
             content: ' ';
             width: 41px;
@@ -40,8 +44,8 @@
     .header{
         img{width: 135px;}
         .navbar-toggler {
-            color: #fff;
-            border-color: #fff;
+            color: $white;
+            border-color: $white;
             padding: 4px 7px;
         }
         .navbar-nav{
@@ -58,8 +62,8 @@
     .header{
         img{width: 135px;}
         .navbar-toggler {
-            color: #fff;
-            border-color: #fff;
+            color: $white;
+            border-color: $white;
             padding: 4px 7px;
         }
         .navbar-nav{
@@ -76,8 +80,8 @@
     .header{
         img{width: 135px;}
         .navbar-toggler {
-            color: #fff;
-            border-color: #fff;
+            color: $white;
+            border-color: $white;
             padding: 4px 7px;
         }
         .navbar-nav{

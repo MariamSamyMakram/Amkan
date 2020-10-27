@@ -1,28 +1,32 @@
+@import './../../ColorFonts.scss';
+
 .Values{
     h1{
-        color: #DAB469;
+        color: $yollow;
         text-transform: uppercase;
         font-size: 34px;
         font-weight: bold;
         text-align: center;
+        font-family: 'times';
     }
     ul{
         li{
-            // margin-left: 15px;
-            // margin-right: 15px;
             h2{
-                color: #dab469;
+                color: $yollow;
                 font-size: 90px;
+                font-family: 'times';
             }
             .square_title{
-                color: #000;
-                background-color: #dab469;
+                color: $black;
+                background-color: $yollow;
                 padding: 8px;
+                font-family: 'Lota';
             }
             p{
-                color: #fff;
+                color: $white;
                 width: 200px;
                 font-size: 16px;
+                font-family: 'Lota';
             }
         }
     }

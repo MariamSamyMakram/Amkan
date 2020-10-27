@@ -1,23 +1,26 @@
+@import './../../ColorFonts.scss';
+
 .Strategies{
-    background-color: rgba(0,0,0,.6);
+    background-color:rgba($color: $black, $alpha: 0.6);
     img{
         width: 100%;
         object-fit: contain;
     }
     h1{
-        color: #DAB469;
+        color: $yollow;
         text-transform: uppercase;
         font-size: 34px;
         font-weight: bold;
+        font-family: 'times';
     }
-    p{color: #fff;}
+    p{color: $white;font-family: 'Lota';}
     ul{
         li{
             padding: 25px;
-            h5{color: #dab469;}
-            p{color: #fff;}
+            h5{color: $yollow;font-family: 'Lota';}
+            p{color: $white;font-family: 'Lota';}
             &:hover{
-                background-color: rgba(0,0,0,0.8);
+                background-color: rgba($color: $black, $alpha: 0.8);
                 border-radius: 5px;
             }
         }

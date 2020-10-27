@@ -1,26 +1,35 @@
+@import './../ColorFonts.scss';
+
 .Strategy{
     h1{
-        color: #DAB469;
+        color: $yollow;
         text-transform: uppercase;
         font-size: 34px;
         font-weight: bold;
+        font-family: 'times';
     }
-    p{color: #fff;}
+    p{
+        color: $white;
+        font-family: 'Lota';
+    }
     ul{
         li{
-            background-color: rgba(0,0,0,0.8);
+            background-color: rgba($color: $black, $alpha: 0.6);
             border-radius: 8px;
             margin: 15px;
             img{
                 margin-bottom: 20px;
             }
             h5{
-                font-size: 16px;
-                color: #DAB469;
+                font-size: 15px;
+                color: $yollow;
+                font-weight: bold;
+                font-family: 'Lota';
             }
             p{
                 font-size: 13px;
-                color: #fff;
+                color: $white;
+                font-family: 'Lota';
             }
         }
     }

@@ -1,16 +1,18 @@
+@import './../../ColorFonts.scss';
+
 .clients{
-    // border-bottom:100px solid transparent;
-    // border-image: url('./Layer.png') 30 stretch;
     h1{
-        color: #DAB469;
+        color: $yollow;
         text-transform: uppercase;
         font-size: 34px;
         font-weight: bold;
+        font-family: 'times';
     }
     p{
         font-size: 32px;
-        color: #fff;
+        color:$white;
         text-transform: capitalize;
+        font-family: 'Lota';
     }
     img{
         width: 100%;
@@ -21,7 +23,7 @@
         position: absolute;
         right: 0;
         top: 40%;
-        color: #DAB469;
+        color: $yollow;
         font-size: 24px;
         width: 40px;
         height: 40px;
@@ -35,7 +37,7 @@
         position: absolute;
         left: 0;
         top: 40%;
-        color: #DAB469;
+        color: $yollow;
         font-size: 24px;
         width: 40px;
         height: 40px;
