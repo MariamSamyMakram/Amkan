@@ -9,8 +9,11 @@ import './Footer.scss';
 class Footer extends Component{
     render(){
         return(
-            <section className="footer pt-5 pb-5">
-                <Container>
+            <section className="footer pb-5">
+                <div className="bg">
+                    <img src={'images/Layer.png'} alt={'layer'} className="Layer" />
+                </div>
+                <Container className="pt-5">
                     <Row>
                         <Col lg={4} md={4} className="mb-2 mb-md-0">
                             <Row>

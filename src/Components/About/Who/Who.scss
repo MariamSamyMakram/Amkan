@@ -1,0 +1,32 @@
+.bg{
+    background-image: url('./bg.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #141414;
+}
+.who{
+    img{
+        width: 100%;
+        object-fit: contain;
+        height: 350px;
+    }
+    h1{
+        color: #DAB469;
+        text-transform: uppercase;
+        font-size: 34px;
+        font-weight: bold;
+        text-align: left;
+    }
+    .body_message{
+        background-color: rgba(0,0,0,0.6);
+        padding: 55px 45px;
+        border-radius: 5px;
+        p{
+            color: #fff;
+            font-size: 15px;
+            margin-bottom: 55px;
+        }
+    }
+}

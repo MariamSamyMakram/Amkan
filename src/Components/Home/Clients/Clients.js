@@ -103,9 +103,6 @@ class Clients extends Component{
                         </Col>
                     </Row>
                 </Container>
-                <div className="bg">
-                    <img src={'images/Layer.png'} alt={'layer'} className="Layer" />
-                </div>
             </section>
         )
     }
