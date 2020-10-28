@@ -24,7 +24,7 @@ class Body extends Component{
                         <Col lg={1}></Col>
                         <Col lg={3} sm={6}>
                             <div className="team_overlay">
-                                <img src={'images/team1.png'} alt={''}/>
+                                <img src={'images/team3.png'} alt={''}/>
                                 <div className="overlay">
                                     <p className="mb-0"><b>Mr.Yocob Ahli</b></p>
                                     <p className="job mb-0"> CEO</p>
@@ -44,7 +44,7 @@ class Body extends Component{
                         </Col>
                         <Col lg={3} sm={6}>
                             <div className="team_overlay">
-                                <img src={'images/team3.png'} alt={''}/>
+                                <img src={'images/team1.png'} alt={''}/>
                                 <div className="overlay">
                                     <p className="mb-0"><b>Mr.Jason Zheng</b></p>
                                     <p className="job mb-0">Chief Commercial Officer</p>

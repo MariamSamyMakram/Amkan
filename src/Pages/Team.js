@@ -6,7 +6,7 @@ import Body from '../Components/Team/Body/Body';
 class Team extends Component{
     render(){
         return(
-            <section className="bg pt-5 pb-5">
+            <section className="lion_bg pt-5 pb-5">
                 <Body />
             </section>
         );

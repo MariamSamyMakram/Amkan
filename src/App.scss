@@ -1,7 +1,17 @@
-@font-face {
-    font-family: 'times';
-    src:url('./Fonts/Times_new_roman/timesbd.ttf') format('opentype');
+@import './Components/ColorFonts.scss';
+.lion_bg{
+    background-image: url('./lion_bg.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $gray;
 }
-.App{
-    // font-family: 'times';
+.bg{
+    background-image: url('./bg.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $gray;
 }

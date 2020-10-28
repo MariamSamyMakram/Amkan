@@ -1,0 +1,10 @@
+{
+    "header":{
+        "home": "Home",
+        "about":"About",
+        "strategy":"Strategy",
+        "team":"Team",
+        "client":"Clients / Pertners",
+        "contact":"Contact Us"
+    }
+}

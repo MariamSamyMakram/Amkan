@@ -2,12 +2,17 @@ import React, { Component } from 'react';
 import {Container ,Row ,Col ,InputGroup ,FormControl} from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
+import {NavLink} from "react-router-dom";
+
+import PropTypes from 'prop-types';
+import {translate} from 'react-switch-lang';
 
 // style
 import './Footer.scss';
 
 class Footer extends Component{
     render(){
+        const { t } = this.props;
         return(
             <section className="footer pb-5">
                 <div className="bg">
@@ -25,17 +30,18 @@ class Footer extends Component{
                                 </Col>
                                 <Col lg={4} xs={4} className="pr-0 pl-0">
                                     <ul className="mb-0 list-unstyled">
-                                        <li className="mb-1"><a href="#">Home</a></li>
-                                        <li className="mb-1"><a href="#">About</a></li>
-                                        <li className="mb-1"><a href="#">Services</a></li>
-                                        <li className="mb-1"><a href="#">Clients</a></li>
-                                        <li className="mb-1"><a href="#">Contact us</a></li>
+                                        <li className="mb-1"><NavLink exact to="/">{t('header.home')}</NavLink></li>
+                                        <li className="mb-1"><NavLink  to="/about">{t('header.about')}</NavLink></li>
+                                        <li className="mb-1"><NavLink  to="/strategy">{t('header.strategy')}</NavLink></li>
+                                        <li className="mb-1"><NavLink  to="/team">{t('header.team')}</NavLink></li>
+                                        <li className="mb-1"><NavLink  to="/clients">{t('header.client')}</NavLink></li>
+                                        <li className="mb-1"><NavLink  to="/contact">{t('header.contact')}</NavLink></li>
                                     </ul>
                                 </Col>
                             </Row>
                         </Col>
                         <Col lg={4}  md={4} className="text-center mb-2 mb-md-0">
-                            <a href="#"><FontAwesomeIcon icon={faLinkedinIn}/></a>
+                            <a href="https://www.linkedin.com/company/amkan-investments/"><FontAwesomeIcon icon={faLinkedinIn}/></a>
                             <p className="mt-3">© 2020.<a href="#">AMKAN</a>  - All Rights Reserved</p>
                         </Col>
                         <Col lg={4} md={4} className="mb-2 mb-md-0">
@@ -60,4 +66,8 @@ class Footer extends Component{
     }
 }
 
-export default Footer;
+Footer.propTypes = {
+    t: PropTypes.func.isRequired,
+  };
+
+export default translate(Footer);

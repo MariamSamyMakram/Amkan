@@ -4,11 +4,16 @@ import {NavLink} from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
+import PropTypes from 'prop-types';
+
 // style
 import './Header.scss';
 
+import {translate} from 'react-switch-lang';
+
 class Header extends Component{
     render(){
+        const { t } = this.props;
         return(
             <section className="header">
                 <Container>
@@ -21,12 +26,12 @@ class Header extends Component{
                         </Navbar.Toggle>
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="ml-auto">
-                                <NavLink className="nav-link" exact to="/">Home</NavLink>
-                                <NavLink className="nav-link"  to="/about">About</NavLink>
-                                <NavLink className="nav-link"  to="/strategy">Strategy</NavLink>
-                                <NavLink className="nav-link"  to="/team">Team</NavLink>
-                                <NavLink className="nav-link"  to="/clients">Clients / Partners</NavLink>
-                                <NavLink className="nav-link"  to="/contact">Contact Us</NavLink>
+                                <NavLink className="nav-link" exact to="/">{t('header.home')}</NavLink>
+                                <NavLink className="nav-link"  to="/about">{t('header.about')}</NavLink>
+                                <NavLink className="nav-link"  to="/strategy">{t('header.strategy')}</NavLink>
+                                <NavLink className="nav-link"  to="/team">{t('header.team')}</NavLink>
+                                <NavLink className="nav-link"  to="/clients">{t('header.client')}</NavLink>
+                                <NavLink className="nav-link"  to="/contact">{t('header.contact')}</NavLink>
                             </Nav>
                         </Navbar.Collapse>
                     </Navbar>
@@ -36,4 +41,8 @@ class Header extends Component{
     }
 }
 
-export default Header;
+Header.propTypes = {
+    t: PropTypes.func.isRequired,
+  };
+
+export default translate(Header);

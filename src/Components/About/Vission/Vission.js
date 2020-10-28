@@ -16,7 +16,7 @@ class Vission extends Component{
                         </Col>
                         <Col lg={6} md={6}>
                             <h1 className="mb-5">Our Mission</h1>
-                            <p>: AMKAN is committed to providing business gateways to foreign enterprises, and value investing in foreign and local companies to create effective joint ventures.</p>
+                            <p>AMKAN is committed to providing business gateways to foreign enterprises, and value investing in foreign and local companies to create effective joint ventures.</p>
                         </Col>
                     </Row>
                 </Container>
