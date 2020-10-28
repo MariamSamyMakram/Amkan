@@ -16,9 +16,17 @@ class Partner extends Component{
                         <Col lg={1}></Col>
                         <Col lg={10}>
                             <ul className="mb-0 list-unstyled d-flex justify-content-between">
-                                <li><a href="http://www.ehong.ae" target="_blank"><img src='images/partner1.png' alt={"partner"}/> </a></li>
-                                <li><a href="https://www.hughesprecisionm.com/" target="_blank"><img src='images/partner2.png' alt={"partner"}/> </a></li>
-                                <li><a href="http://www.zdpcc.net" target="_blank"><img src='images/partner3.png' alt={"partner"}/> </a></li>
+                                <li>
+                                    <a href="http://www.ehong.ae" target="_blank"><img src='images/partner1.png' alt={"partner"}/> </a>
+                                    <p>Investing in Foreign Enterprises</p>
+                                </li>
+                                <li>
+                                    <a href="https://www.hughesprecisionm.com/" target="_blank"><img src='images/partner2.png' alt={"partner"}/> </a>
+                                    <p>Federal Firearms Manufacturer<br/> Type 7 NFA Class 2</p>
+                                </li>
+                                <li>
+                                    <a href="http://www.zdpcc.net" target="_blank"><img src='images/partner3.png' alt={"partner"}/> </a>
+                                </li>
                             </ul>
                         </Col>
                         <Col lg={1}></Col>
