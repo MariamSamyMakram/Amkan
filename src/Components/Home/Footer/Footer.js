@@ -41,7 +41,7 @@ class Footer extends Component{
                             </Row>
                         </Col>
                         <Col lg={4}  md={4} className="text-center mb-2 mb-md-0">
-                            <a href="https://www.linkedin.com/company/amkan-investments/"><FontAwesomeIcon icon={faLinkedinIn}/></a>
+                            <a target="_blank" href="https://www.linkedin.com/company/amkan-investments/"><FontAwesomeIcon icon={faLinkedinIn}/></a>
                             <p className="mt-3">© 2020.<a href="#">AMKAN</a>  - All Rights Reserved</p>
                         </Col>
                         <Col lg={4} md={4} className="mb-2 mb-md-0">

@@ -38,7 +38,7 @@ class HeaderTop extends Component{
                         <Col lg={10}></Col>
                         <Col lg={2} className="d-flex justify-content-end">
                             <ul className="list-unstyled d-flex mb-0">
-                                <li className="mr-2"><a href="https://www.linkedin.com/company/amkan-investments/" className="in"><b>in</b></a></li>
+                                <li className="mr-2"><a target="_blank" href="https://www.linkedin.com/company/amkan-investments/" className="in"><b>in</b></a></li>
                                 <li className="mr-2 ml-2">|</li>
                                 <li>
                                     <Dropdown>
