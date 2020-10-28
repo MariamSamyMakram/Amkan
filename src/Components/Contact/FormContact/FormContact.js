@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
-import { Container ,Row ,Col ,Form ,Button} from "react-bootstrap";
+import { Container ,Row ,Col ,Form ,Button, FormControl} from "react-bootstrap";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneAlt , faEnvelope , faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons';
 
 // style
 import './FormContact.scss';
+
+import PropTypes from 'prop-types';
+import {translate ,getLanguage} from 'react-switch-lang';
+
 
 class FormContact extends Component{
     render(){
@@ -15,7 +19,7 @@ class FormContact extends Component{
                     <Row>
                         <Col lg={1}></Col>
                         <Col lg={5} md={6} className="mt-5">
-                            <h1 className="mb-4">Contact Us</h1>
+                            <h1 className={getLanguage()==='he'?'text-right mb-4':'text-left mb-4'}>Contact Us</h1>
                             <ul className="mb-0 list-unstyled p-0">
                                 <li>
                                     <Row>
@@ -60,4 +64,8 @@ class FormContact extends Component{
     }
 }
 
-export default FormContact;
+FormContact.propTypes = {
+    t: PropTypes.func.isRequired,
+};
+
+export default translate(FormContact);

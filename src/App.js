@@ -25,11 +25,13 @@ import Client from './Pages/Client';
 // Footer
 import Footer from './Components/Home/Footer/Footer';
 
+import {translate , getLanguage} from 'react-switch-lang';
 
 function App() {
+    console.log(getLanguage());
   return (
     <Router onUpdate={() => window.scrollTo(0, 0)}>
-      <div className="App">
+      <div className="App" dir={getLanguage()==='he'?'rtl':'ltr'}>
           <HeaderTop />
           <Header/>
           <React.StrictMode>
@@ -64,4 +66,4 @@ function App() {
   );
 }
 
-export default App;
+export default translate(App);

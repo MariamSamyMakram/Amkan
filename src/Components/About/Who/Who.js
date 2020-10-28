@@ -4,6 +4,9 @@ import { Col, Container, Row } from 'react-bootstrap';
 // style
 import './Who.scss';
 
+import PropTypes from 'prop-types';
+import {translate ,getLanguage} from 'react-switch-lang';
+
 class Who extends Component{
     render(){
         return(
@@ -13,7 +16,7 @@ class Who extends Component{
                         <Col lg={5} md={5}>
                             <img src={'images/Who.png'} alt={'Who'}/>
                         </Col>
-                        <Col lg={7} md={7} className="mt-4 mt-md-0">
+                        <Col lg={7} md={7}  className={getLanguage()==='he'?'text-right mt-4 mt-md-0':'text-left mt-4 mt-md-0'}>
                             <h1 className="mb-4">Who we are</h1>
                             <div className="body_message">
                                 <p>AMKAN is a private prestige investment company that provides a range of active investment strategies to serve a broad spectrum of clients’ and partners’ needs.</p>
@@ -27,4 +30,8 @@ class Who extends Component{
     }
 }
 
-export default Who;
+Who.propTypes = {
+    t: PropTypes.func.isRequired,
+};
+
+export default translate(Who);

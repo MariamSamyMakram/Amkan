@@ -4,6 +4,9 @@ import { Col, Container, Row } from 'react-bootstrap';
 // style
 import './Strategies.scss';
 
+import PropTypes from 'prop-types';
+import {translate ,getLanguage} from 'react-switch-lang';
+
 class Strategies extends Component{
     render(){
         return(
@@ -13,7 +16,7 @@ class Strategies extends Component{
                         <Col lg={5} md={5}>
                             <img src={'images/strategies.png'} alt={'startegy'}/>
                         </Col>
-                        <Col lg={7} md={7} className="mt-4 mt-md-0">
+                        <Col lg={7} md={7} className="mt-4 mt-md-0 " className={getLanguage()==='he'?'text-right':'text-left'}>
                             <h1>Our Strategies</h1>
                             <p>“ We Drive You To Excellence Not Just Success!”</p>
                             <ul className="list-unstyled mb-0">
@@ -59,4 +62,9 @@ class Strategies extends Component{
     }
 }
 
-export default Strategies;
+
+Strategies.propTypes = {
+    t: PropTypes.func.isRequired,
+};
+
+export default translate(Strategies);

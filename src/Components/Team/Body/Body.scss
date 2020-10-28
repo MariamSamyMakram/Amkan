@@ -25,7 +25,6 @@
         .overlay{
             position: absolute;
             bottom: 0;
-            left: 0;
             z-index: 2;
             background-color: rgba($color: $black, $alpha: 0.6);
             width: 0%;
@@ -34,7 +33,6 @@
             transition: ease width 0.5s;
             p{ 
                 font-size: 14px;
-                margin-left: 20px;
                 margin-top: 12px;
                 font-family: 'times';
 
@@ -46,6 +44,19 @@
                 font-family: 'Lota';
             }
         }
+        .left{
+            left: 0;
+            text-align: left;
+            p{margin-left: 20px;}
+            .job{margin-left: 20px;}
+        }
+        .right{
+            right: 0;
+            text-align: right;
+            p{margin-right: 20px;}
+            .job{margin-right: 20px;}
+        }
+
         &:hover{
             .overlay{width: 75%;}
         }

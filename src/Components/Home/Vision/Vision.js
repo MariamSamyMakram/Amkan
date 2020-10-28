@@ -4,6 +4,9 @@ import {Container ,Row ,Col ,Tabs ,Tab} from 'react-bootstrap';
 // style
 import './Vision.scss';
 
+import PropTypes from 'prop-types';
+import {translate ,getLanguage} from 'react-switch-lang';
+
 class Vision extends Component{
     render(){
         return(
@@ -19,10 +22,10 @@ class Vision extends Component{
                                 <Col lg={8} sm={8} className="mt-sm-5 pt-sm-2 pt-md-5">
                                     <Tabs defaultActiveKey="Vission" id="uncontrolled-tab-example">
                                         <Tab eventKey="Vission" title="VISSION" >
-                                            <p>UAE in Origin, Global in Scope. Becoming the ultimate bridge between foreign enterprises and UAE.</p>
+                                            <p className={getLanguage()==='he'?'text-right':'text-left'}>UAE in Origin, Global in Scope. Becoming the ultimate bridge between foreign enterprises and UAE.</p>
                                         </Tab>
                                         <Tab eventKey="Mission" title="MISSION">
-                                            <p>
+                                            <p className={getLanguage()==='he'?'text-right':'text-left'}>
                                             AMKAN is committed to providing business gateways to foreign enterprises, and value investing in foreign and local companies to create effective joint ventures
                                             </p>
                                         </Tab>
@@ -38,4 +41,8 @@ class Vision extends Component{
     }
 }
 
-export default Vision;
+Vision.propTypes = {
+    t: PropTypes.func.isRequired,
+};
+
+export default translate(Vision);

@@ -5,10 +5,11 @@ import {  faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
 import {NavLink} from "react-router-dom";
 
 import PropTypes from 'prop-types';
-import {translate} from 'react-switch-lang';
+import {translate ,getLanguage} from 'react-switch-lang';
 
 // style
 import './Footer.scss';
+
 
 class Footer extends Component{
     render(){
@@ -22,14 +23,14 @@ class Footer extends Component{
                     <Row>
                         <Col lg={4} md={4} className="mb-2 mb-md-0">
                             <Row>
-                                <Col lg={8} xs={8}>
+                                <Col lg={8} xs={8} className={getLanguage()==='he'?'text-right':'text-left'}>
                                     <h3 className="mb-3">Venues</h3>
                                     <p className="mb-1" >Address :  </p>
                                     <p className="mb-1">Lorem ipsum dolor sit amet,</p>
                                     <p className="mb-1">+971 123 456 789</p>
                                 </Col>
-                                <Col lg={4} xs={4} className="pr-0 pl-0">
-                                    <ul className="mb-0 list-unstyled">
+                                <Col lg={4} xs={4} className={getLanguage()==='he'?'text-right pr-0 pl-0':'text-left pr-0 pl-0'}>
+                                    <ul className={getLanguage()==='he'?'pr-0 mb-0 list-unstyled':'pl-0 mb-0 list-unstyled'}>
                                         <li className="mb-1"><NavLink exact to="/">{t('header.home')}</NavLink></li>
                                         <li className="mb-1"><NavLink  to="/about">{t('header.about')}</NavLink></li>
                                         <li className="mb-1"><NavLink  to="/strategy">{t('header.strategy')}</NavLink></li>
@@ -44,7 +45,7 @@ class Footer extends Component{
                             <a target="_blank" href="https://www.linkedin.com/company/amkan-investments/"><FontAwesomeIcon icon={faLinkedinIn}/></a>
                             <p className="mt-3">© 2020.<a href="#">AMKAN</a>  - All Rights Reserved</p>
                         </Col>
-                        <Col lg={4} md={4} className="mb-2 mb-md-0">
+                        <Col lg={4} md={4} className="mb-2 mb-md-0" className={getLanguage()==='he'?'text-right':'text-left'}>
                             <p>Be first to know about the latest updates</p>
 
                             <InputGroup className="mb-3">

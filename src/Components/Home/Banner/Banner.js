@@ -4,8 +4,12 @@ import {Container ,Row ,Col} from 'react-bootstrap';
 // style
 import './Banner.scss';
 
+import PropTypes from 'prop-types';
+import {translate ,getLanguage} from 'react-switch-lang';
+
 class Banner extends Component{
     render(){
+        const { t } = this.props
         return(
             <section className="Banner">
                 <Container>
@@ -15,7 +19,7 @@ class Banner extends Component{
                         </Col>
                         <Col lg={6} md={5}></Col>
                         <Col lg={6} md={7}>
-                            <p>AMKAN has a disciplined, detailed, and standardized investment strategy. We offer comprehensive business access to various enterprises worldwide.</p>
+                            <p className={getLanguage()==='he'?'text-right':'text-left'}>AMKAN has a disciplined, detailed, and standardized investment strategy. We offer comprehensive business access to various enterprises worldwide.</p>
                         </Col>
                     </Row>
                 </Container>
@@ -24,4 +28,8 @@ class Banner extends Component{
     }
 }
 
-export default Banner;
+Banner.propTypes = {
+    t: PropTypes.func.isRequired,
+};
+
+export default translate(Banner);

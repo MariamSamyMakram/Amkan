@@ -5,15 +5,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 import PropTypes from 'prop-types';
+import {translate ,getLanguage} from 'react-switch-lang';
 
 // style
 import './Header.scss';
 
-import {translate} from 'react-switch-lang';
 
 class Header extends Component{
     render(){
-        const { t } = this.props;
+        const { t} = this.props
         return(
             <section className="header">
                 <Container>
@@ -25,7 +25,7 @@ class Header extends Component{
                             <FontAwesomeIcon icon={faBars} />
                         </Navbar.Toggle>
                         <Navbar.Collapse id="basic-navbar-nav">
-                            <Nav className="ml-auto">
+                            <Nav className={getLanguage()==='he'?'mr-auto':'ml-auto'}>
                                 <NavLink className="nav-link" exact to="/">{t('header.home')}</NavLink>
                                 <NavLink className="nav-link"  to="/about">{t('header.about')}</NavLink>
                                 <NavLink className="nav-link"  to="/strategy">{t('header.strategy')}</NavLink>
@@ -43,6 +43,6 @@ class Header extends Component{
 
 Header.propTypes = {
     t: PropTypes.func.isRequired,
-  };
+};
 
 export default translate(Header);

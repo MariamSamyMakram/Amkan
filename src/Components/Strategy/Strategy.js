@@ -4,6 +4,8 @@ import {Container ,Row ,Col} from 'react-bootstrap'
 // style
 import './Strategy.scss';
 
+import PropTypes from 'prop-types';
+import {translate ,getLanguage} from 'react-switch-lang';
 
 class Strategy extends Component{
     render(){
@@ -43,4 +45,8 @@ class Strategy extends Component{
     }
 }
 
-export default Strategy;
+Strategy.propTypes = {
+    t: PropTypes.func.isRequired,
+};
+
+export default translate(Strategy);

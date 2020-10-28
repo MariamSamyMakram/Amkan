@@ -7,9 +7,15 @@
         font-size: 38px;
         font-weight: bold;
         width: 41%;
-        padding-left: 30px;
-        border-left: 5px solid;
         font-family: 'times';
+    }
+    .border_left{
+        border-left: 5px solid;
+        padding-left: 30px;
+    }
+    .border_right{
+        border-right: 5px solid;
+        padding-right: 30px;
     }
     p{
         color:$white;
