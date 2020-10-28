@@ -15,9 +15,9 @@ class Partners extends Component{
                         </Col>
                         <Col lg={9}>
                             <ul className="mb-0 list-unstyled d-flex justify-content-between">
-                                <li><img src='images/partner1.png' alt={"partner"}/></li>
-                                <li><img src='images/partner2.png' alt={"partner"}/></li>
-                                <li><img src='images/partner3.png' alt={"partner"}/></li>
+                                <li><a href="http://www.ehong.ae" target="_blank"><img src='images/partner1.png' alt={"partner"}/> </a></li>
+                                <li><a href="https://www.hughesprecisionm.com/" target="_blank"><img src='images/partner2.png' alt={"partner"}/> </a></li>
+                                <li><a href="http://www.zdpcc.net" target="_blank"><img src='images/partner3.png' alt={"partner"}/> </a></li>
                             </ul>
                         </Col>
                     </Row>

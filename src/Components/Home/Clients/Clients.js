@@ -7,6 +7,10 @@ import { faAngleLeft , faAngleRight} from '@fortawesome/free-solid-svg-icons';
 // style
 import './Clients.scss';
 
+
+// json 
+import {Client} from './Client';
+
 function SampleNextArrow(props) {
     const { onClick } = props;
     return (
@@ -72,7 +76,7 @@ class Clients extends Component{
             ]
         };
         return(
-            <section className="clients pt-5">
+            <section className="clients pt-5 pb-5">
                 <Container>
                     <Row>
                         <Col lg={12} className="text-center">
@@ -81,24 +85,16 @@ class Clients extends Component{
                         </Col>
                         <Col lg={12}>
                             <Slider {...settings}>
-                                <div>
-                                    <img src={'images/client1.png'} alt={'clients'}/>
-                                </div>
-                                <div>
-                                    <img src={'images/client2.png'} alt={'clients'}/>
-                                </div>
-                                <div>
-                                    <img src={'images/client3.png'} alt={'clients'}/>
-                                </div>
-                                <div>
-                                    <img src={'images/client4.png'} alt={'clients'}/>
-                                </div>
-                                <div>
-                                    <img src={'images/client5.png'} alt={'clients'}/>
-                                </div>
-                                <div>
-                                    <img src={'images/client6.png'} alt={'clients'}/>
-                                </div>
+                                {
+                                    Client.map((item ,key)=>{
+                                        return(
+                                            <div key={key}>
+                                                <a href={item.url}  target="_blank"><img src={item.image} alt={'clients'}/></a>
+                                            </div>
+                                        )
+                                    })
+                                }
+
                             </Slider>
                         </Col>
                     </Row>
