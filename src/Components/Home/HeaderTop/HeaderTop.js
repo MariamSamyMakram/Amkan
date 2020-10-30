@@ -48,10 +48,10 @@ class HeaderTop extends Component{
                                     {/* <Form>
                                         <Form.Group controlId="exampleForm.ControlSelect1">
                                             <Form.Control as="select">
-                                                <option onClick={this.handleSetLanguage('en')}> <FontAwesomeIcon icon={faGlobe} />{t('headertop.en')}</option>
-                                                <option onClick={this.handleSetLanguage('he')}>{t('headertop.he')}</option>
-                                                <option onClick={this.handleSetLanguage('ar')}>{t('headertop.ar')}</option>
-                                                <option onClick={this.handleSetLanguage('ch')}>{t('headertop.ch')}</option>
+                                                <option onClick={this.handleSetLanguage('en')} value="en"> <FontAwesomeIcon icon={faGlobe} />{t('headertop.en')}</option>
+                                                <option onClick={this.handleSetLanguage('he')} value="he">{t('headertop.he')}</option>
+                                                <option onClick={this.handleSetLanguage('ar')} value="ar">{t('headertop.ar')}</option>
+                                                <option onClick={this.handleSetLanguage('ch')} value="ch">{t('headertop.ch')}</option>
                                             </Form.Control>
                                         </Form.Group>
                                     </Form> */}

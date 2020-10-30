@@ -12,15 +12,15 @@
     .nav-link{
         color: $white !important;
         cursor: pointer;
-        padding: 0 20px !important;
+        padding: 5px 20px !important;
         position: relative;
         font-family: 'Lota';
         &::after{
             content: ' ';
             position: absolute;
-            left: 19px;
+            left: 0;
             bottom: 0;
-            width: 0px;
+            width: 0;
             height: 2px;
             background-color: $yollow;
             opacity: 0;
@@ -34,7 +34,7 @@
         font-family: 'Lota';
         &::after{
             content: ' ';
-            width: 41px;
+            width: 100%;
             opacity: 1;
         }
     }

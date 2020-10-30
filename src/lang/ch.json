@@ -1,9 +1,9 @@
 {
     "headertop":{
-        "en":"英語",
-        "ar":"阿拉伯",
-        "he":"希伯來語",
-        "ch":"中文"
+        "en":"English",
+        "ar":"عربى",
+        "he":"Hebrew",
+        "ch":"Chinese"
     },
     "header":{
         "home": "家",
