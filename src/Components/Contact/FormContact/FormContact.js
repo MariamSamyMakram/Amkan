@@ -13,13 +13,14 @@ import {translate ,getLanguage} from 'react-switch-lang';
 
 class FormContact extends Component{
     render(){
+        const { t} = this.props
         return(
             <section className="FormContact pt-5 pb-5 mt-md-5">
                 <Container>
                     <Row>
                         <Col lg={1}></Col>
                         <Col lg={5} md={6} className="mt-5">
-                            <h1 className={getLanguage()==='he'?'text-right mb-4':'text-left mb-4'}>Contact Us</h1>
+                            <h1 className={getLanguage()==='he' || getLanguage()==='ar'?'text-right mb-4':'text-left mb-4'}>{t('contact.title')}</h1>
                             <ul className="mb-0 list-unstyled p-0">
                                 <li>
                                     <Row>
@@ -44,15 +45,15 @@ class FormContact extends Component{
                         <Col lg={5} md={6} className="mt-5">
                             <Form>
                                 <Form.Group controlId="formBasicEmail">
-                                    <Form.Control type="email" placeholder="Name" />
+                                    <Form.Control type="name" placeholder={t('contact.name')} />
                                 </Form.Group>
                                 <Form.Group controlId="formBasicEmail">
-                                    <Form.Control type="email" placeholder="Email Address" />
+                                    <Form.Control type="email" placeholder={t('contact.email')}/>
                                 </Form.Group>
                                 <Form.Group controlId="exampleForm.ControlTextarea1">
-                                    <Form.Control as="textarea" rows={4} placeholder="Message" />
+                                    <Form.Control as="textarea" rows={4} placeholder={t('contact.message')} />
                                 </Form.Group>
-                                <Button variant="warning">SEND</Button>
+                                <Button variant="warning">{t('contact.send')}</Button>
                             </Form>
 
                         </Col>

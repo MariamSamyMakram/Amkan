@@ -5,7 +5,7 @@ import {Container ,Row ,Col} from 'react-bootstrap'
 import './Strategy.scss';
 
 import PropTypes from 'prop-types';
-import {translate ,getLanguage} from 'react-switch-lang';
+import {translate} from 'react-switch-lang';
 
 class Strategy extends Component{
     render(){
@@ -15,26 +15,26 @@ class Strategy extends Component{
                 <Container>
                     <Row>
                         <Col lg={12} className="text-center pt-md-5 mb-5">
-                            <h1>Strategy</h1>
-                            <p>“ We Drive You To Excellence Not Just Success!”</p>
+                            <h1>{t('strategies.title')}</h1>
+                            <p>{t('strategies.p')}</p>
                         </Col>
                         <Col lg={1}></Col>
                         <Col lg={10}>
                             <ul className="mb-0 pl-0 list-unstyled d-block d-md-flex justify-content-between flex-nowrap bd-highlight">
                                 <li className="order-3 p-3 bd-highlight text-center">
                                     <img src={'images/cash_flow.png'}/>
-                                    <h5>Investing in Foreign Enterprises</h5>
-                                    <p>Opening the gates to the multinational promised enterprises to take place in UAE business community</p>
+                                    <h5>{t('strategies.h1_1')}</h5>
+                                    <p>{t('strategies.p1_1')}</p>
                                 </li>
                                 <li className="order-3 p-3 bd-highlight text-center">
                                     <img src={'images/development.png'}/>
-                                    <h5>Establishing Joint Ventures</h5>
-                                    <p>Creating the chance for business expansions and development while moving into Emirati market</p>
+                                    <h5>{t('strategies.h1_2')}</h5>
+                                    <p>{t('strategies.p1_2')}</p>                                
                                 </li>
                                 <li className="order-3 p-3 bd-highlight text-center">
                                     <img src={'images/growth.png'}/>
-                                    <h5>Providing Busines Access</h5>
-                                    <p>Providing your business access to the Emirati established markets and distribution channels</p>
+                                    <h5>{t('strategies.h1_3')}</h5>
+                                    <p>{t('strategies.p1_3')}</p>
                                 </li>
                             </ul>
                         </Col>

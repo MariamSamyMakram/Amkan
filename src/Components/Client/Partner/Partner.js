@@ -4,14 +4,19 @@ import {Container ,Row ,Col} from 'react-bootstrap';
 // style
 import './Partner.scss';
 
+import PropTypes from 'prop-types';
+import {translate} from 'react-switch-lang';
+
+
 class Partner extends Component{
     render(){
+        const { t} = this.props
         return(
             <section className="Partner pt-5 pb-5">
                 <Container>
                     <Row>
                         <Col lg={12} className="text-center mb-5">
-                            <h1 className="pt-3">Partners</h1>
+                            <h1 className="pt-3">{t('partners')}</h1>
                         </Col>
                         <Col lg={1}></Col>
                         <Col lg={10}>
@@ -37,4 +42,8 @@ class Partner extends Component{
     }
 }
 
-export default Partner;
+Partner.propTypes = {
+    t: PropTypes.func.isRequired,
+};
+
+export default translate(Partner);

@@ -9,6 +9,7 @@ import {translate ,getLanguage} from 'react-switch-lang';
 
 class Who extends Component{
     render(){
+        const { t} = this.props
         return(
             <section className="who pt-5 pb-5 mt-5">
                 <Container className="mt-lg-5 pt-lg-5">
@@ -17,9 +18,9 @@ class Who extends Component{
                             <img src={'images/Who.png'} alt={'Who'}/>
                         </Col>
                         <Col lg={7} md={7}  className={getLanguage()==='he'?'text-right mt-4 mt-md-0':'text-left mt-4 mt-md-0'}>
-                            <h1 className="mb-4">Who we are</h1>
+                            <h1 className="mb-4">{t('who.title')}</h1>
                             <div className="body_message">
-                                <p>AMKAN is a private prestige investment company that provides a range of active investment strategies to serve a broad spectrum of clients’ and partners’ needs.</p>
+                                <p>{t('who.p')}</p>
                             </div>
                            
                         </Col>

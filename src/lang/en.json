@@ -78,5 +78,28 @@
         "p":"Be first to know about the latest updates",
         "email":"Email Address",
         "subscirbe":"Subscribe"
+    },
+    "team":{
+        "title":"OUR TEAM",
+        "p":"“In the UAE, we believe that creating a sustainable business will lead to further business growth. We consistently work to earn the trust of our partners and clients and meet with their sophisticated needs. In AMKAN Investments we continuously expand into new investments and endure our mission to enrich our partners and clients with our expertise”",
+        "name1":"Mr.Yocob Ahli",
+        "job1":"CEO",
+        "p1":"As an experienced professional in the Middle Eastern Banking and Investment Industry, Yacob Ahli is the Chief Executive Officer. He has a clear vision for great strategies that can bring and strengthen projects worldwide, and deliver solid accomplishments for AMKAN’s partners and clients.",
+        "name2":"Mr.Majed Al Abbar",
+        "job2":"Chief Operating Officer",
+        "p2":"Having served as a director in the government, Majed Al Abbar, acts as the Chief Operations Officer. He intends to steadily achieve the targets which AMKAN sets with its partners and clients, and makes a point of engaging in dialogue and stepping up efforts to continuously create services of value.",
+        "name3":"Mr.Jason Zheng",
+        "job3":"Chief Commercial Officer",
+        "p3":"A former member of Huawei Middle East Executive management team, VP of Huawei ME region and Vodafone Key account, and one of the main founders of Huawei Iraq, Jason Zheng, the Chief Commercial Officer. He is centered as the core in enforcing and expanding businesses and Investments between foreign enterprises and the UAE. Zheng’s long-standing experience and knowledge deliver the best practices taking into account each country’s business customs and culture.",
+        "name4":"Mr.Wang Xiaohui",
+        "job4":"Chief Investment Representative",
+        "p4":"Serves as Chief Investment Officer, Mr.Wang Xiaohui, has worked in the investment banking industry in China for more than 10 years and is experienced in providing financial services in projects such as IPO, equity refinancing, bond issuing in PRC China, Hong Kong, and Macao capital markets. His clients include major China state-owned enterprises (SOE) as well as high-tech private unicorn companies."
+    },
+    "contact":{
+        "title":"CONTACT US",
+        "name":"Name",
+        "email":"Email Address",
+        "message":"Message",
+        "send":"Send"
     }
 }
