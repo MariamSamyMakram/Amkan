@@ -23,14 +23,14 @@ class Footer extends Component{
                     <Row>
                         <Col lg={4} md={4} className="mb-2 mb-md-0">
                             <Row>
-                                <Col lg={8} xs={8} className={getLanguage()==='he'?'text-right':'text-left'}>
-                                    <h3 className="mb-3">Venues</h3>
-                                    <p className="mb-1" >Address :  </p>
-                                    <p className="mb-1">Lorem ipsum dolor sit amet,</p>
-                                    <p className="mb-1">+971 123 456 789</p>
+                                <Col lg={8} xs={8} className={getLanguage()==='he' || getLanguage()==='ar'?'text-right':'text-left'}>
+                                    <h3 className="mb-3">{t('footer.title')}</h3>
+                                    <p className="mb-1" >{t('footer.address_title')} : </p>
+                                    <p className="mb-1">{t('footer.address')}</p>
+                                    <p className="mb-1">{t('footer.phone')}</p>
                                 </Col>
-                                <Col lg={4} xs={4} className={getLanguage()==='he'?'text-right pr-0 pl-0':'text-left pr-0 pl-0'}>
-                                    <ul className={getLanguage()==='he'?'pr-0 mb-0 list-unstyled':'pl-0 mb-0 list-unstyled'}>
+                                <Col lg={4} xs={4} className={getLanguage()==='he' || getLanguage()==='ar'?'text-right pr-0 pl-0':'text-left pr-0 pl-0'}>
+                                    <ul className={getLanguage()==='he' || getLanguage()==='ar'?'pr-0 mb-0 list-unstyled':'pl-0 mb-0 list-unstyled'}>
                                         <li className="mb-1"><NavLink exact to="/">{t('header.home')}</NavLink></li>
                                         <li className="mb-1"><NavLink  to="/about">{t('header.about')}</NavLink></li>
                                         <li className="mb-1"><NavLink  to="/strategy">{t('header.strategy')}</NavLink></li>
@@ -43,19 +43,21 @@ class Footer extends Component{
                         </Col>
                         <Col lg={4}  md={4} className="text-center mb-2 mb-md-0">
                             <a target="_blank" href="https://www.linkedin.com/company/amkan-investments/"><FontAwesomeIcon icon={faLinkedinIn}/></a>
-                            <p className="mt-3">© 2020.<a href="#">AMKAN</a>  - All Rights Reserved</p>
+                            <p className="mt-3">
+                                {t('footer.copyright1')}<a href="#">{t('footer.copyright2')}</a>{t('footer.copyright3')}
+                            </p>
                         </Col>
-                        <Col lg={4} md={4} className="mb-2 mb-md-0" className={getLanguage()==='he'?'text-right':'text-left'}>
-                            <p>Be first to know about the latest updates</p>
+                        <Col lg={4} md={4} className="mb-2 mb-md-0" className={getLanguage()==='he' || getLanguage()==='ar'?'text-right':'text-left'}>
+                            <p>{t('footer.p')}</p>
 
                             <InputGroup className="mb-3">
                                 <FormControl
-                                    placeholder="EMAIL ADDRESS"
+                                    placeholder={t('footer.email')}
                                     aria-label="EMAIL ADDRESS"
                                     aria-describedby="basic-addon2"
                                 />
                                 <InputGroup.Append>
-                                    <InputGroup.Text id="basic-addon2">SUBSCRIBE</InputGroup.Text>
+                                    <InputGroup.Text id="basic-addon2">{t('footer.subscirbe')}</InputGroup.Text>
                                 </InputGroup.Append>
                             </InputGroup>
                             

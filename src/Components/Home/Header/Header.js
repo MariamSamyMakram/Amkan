@@ -25,7 +25,7 @@ class Header extends Component{
                             <FontAwesomeIcon icon={faBars} />
                         </Navbar.Toggle>
                         <Navbar.Collapse id="basic-navbar-nav">
-                            <Nav className={getLanguage()==='he'?'mr-auto':'ml-auto'}>
+                            <Nav className={getLanguage()==='he' || getLanguage()==='ar'?'mr-auto':'ml-auto'}>
                                 <NavLink className="nav-link" exact to="/">{t('header.home')}</NavLink>
                                 <NavLink className="nav-link"  to="/about">{t('header.about')}</NavLink>
                                 <NavLink className="nav-link"  to="/strategy">{t('header.strategy')}</NavLink>

@@ -9,6 +9,7 @@ import {translate ,getLanguage} from 'react-switch-lang';
 
 class Strategies extends Component{
     render(){
+        const { t} = this.props
         return(
             <section className="Strategies pt-5 pb-5">
                 <Container>
@@ -16,9 +17,9 @@ class Strategies extends Component{
                         <Col lg={5} md={5}>
                             <img src={'images/strategies.png'} alt={'startegy'}/>
                         </Col>
-                        <Col lg={7} md={7} className="mt-4 mt-md-0 " className={getLanguage()==='he'?'text-right':'text-left'}>
-                            <h1>Our Strategies</h1>
-                            <p>“ We Drive You To Excellence Not Just Success!”</p>
+                        <Col lg={7} md={7} className="mt-4 mt-md-0 " className={getLanguage()==='he' || getLanguage()==='ar'?'text-right':'text-left'}>
+                            <h1>{t('strategies.title')}</h1>
+                            <p>{t('strategies.p')}</p>
                             <ul className="list-unstyled mb-0">
                                 <li className="mb-1">
                                     <Row>
@@ -26,8 +27,8 @@ class Strategies extends Component{
                                             <img src={'images/cash_flow.png'} alt={''} />
                                         </Col>
                                         <Col lg={9} xs={9}>
-                                            <h5>Investing in Foreign Enterprises</h5>
-                                            <p>Opening the gates to the multinational promised enterprises to take place in UAE business community</p>
+                                            <h5>{t('strategies.h1_1')}</h5>
+                                            <p>{t('strategies.p1_1')}</p>
                                         </Col>
                                     </Row>
                                 </li>
@@ -37,9 +38,8 @@ class Strategies extends Component{
                                             <img src={'images/development.png'} alt={''} />
                                         </Col>
                                         <Col lg={9} xs={9}>
-                                            <h5>Establishing Joint Ventures</h5>
-                                            <p>Creating the chance for business expansions and development while moving into Emirati market</p>
-                                        </Col>
+                                            <h5>{t('strategies.h1_2')}</h5>
+                                            <p>{t('strategies.p1_2')}</p>                                        </Col>
                                     </Row>
                                 </li>
                                 <li className="mb-1">
@@ -48,8 +48,8 @@ class Strategies extends Component{
                                             <img src={'images/growth.png'} alt={''} />
                                         </Col>
                                         <Col lg={9} xs={9}>
-                                            <h5>Providing Business Access</h5>
-                                            <p>Providing your business access to the Emirati established markets and distribution channels</p>
+                                            <h5>{t('strategies.h1_3')}</h5>
+                                            <p>{t('strategies.p1_3')}</p>
                                         </Col>
                                     </Row>
                                 </li>

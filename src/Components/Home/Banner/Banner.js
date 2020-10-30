@@ -15,11 +15,13 @@ class Banner extends Component{
                 <Container>
                     <Row>
                         <Col lg={6} md={7}>
-                            <h1>Appreciating our partners</h1>
+                            <h1>{t('banner.title')}</h1>
                         </Col>
                         <Col lg={6} md={5}></Col>
                         <Col lg={6} md={7}>
-                            <p className={getLanguage()==='he'?'text-right':'text-left'}>AMKAN has a disciplined, detailed, and standardized investment strategy. We offer comprehensive business access to various enterprises worldwide.</p>
+                            <p className={getLanguage()==='he' || getLanguage()==='ar'?'text-right':'text-left'}>
+                                {t('banner.p')}
+                            </p>
                         </Col>
                     </Row>
                 </Container>

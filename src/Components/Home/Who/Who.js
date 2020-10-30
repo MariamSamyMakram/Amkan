@@ -4,16 +4,20 @@ import {Container ,Row ,Col} from 'react-bootstrap';
 // style
 import './Who.scss';
 
+import PropTypes from 'prop-types';
+import {translate} from 'react-switch-lang';
+
 class Who extends Component{
     render(){
+        const { t} = this.props
         return(
             <div className="who pt-5 pb-5">
                 <Container>
                     <Row>
                         <Col lg={2}></Col>
                         <Col lg={8} className="text-center">
-                            <h1 className="text-center">Who we are</h1>
-                            <p>AMKAN is a private prestige investment company that provides a range of active investment strategies to serve a broad spectrum of clients’ and partners’ needs.</p>
+                            <h1 className="text-center">{t('who.title')}</h1>
+                            <p>{t('who.p')}</p>
                         </Col>
                         <Col lg={2}></Col>
                     </Row>
@@ -23,4 +27,8 @@ class Who extends Component{
     }
 }
 
-export default Who;
+Who.propTypes = {
+    t: PropTypes.func.isRequired,
+};
+
+export default translate(Who);

@@ -7,7 +7,8 @@ import { faAngleLeft , faAngleRight} from '@fortawesome/free-solid-svg-icons';
 // style
 import './Clients.scss';
 
-
+import PropTypes from 'prop-types';
+import {translate} from 'react-switch-lang';
 // json 
 import {Client} from './Client';
 
@@ -42,6 +43,7 @@ class Clients extends Component{
         this.Slider.slickPrev();
     }
     render(){
+        const { t} = this.props
         const settings = {
             dots: false,
             infinite: true,
@@ -80,8 +82,8 @@ class Clients extends Component{
                 <Container>
                     <Row>
                         <Col lg={12} className="text-center">
-                            <h1>clients</h1>
-                            <p>Our Clients Are Our Priority</p>
+                            <h1>{t('clients.title')}</h1>
+                            <p>{t('clients.p')}</p>
                         </Col>
                         <Col lg={12}>
                             <Slider {...settings}>
@@ -104,4 +106,8 @@ class Clients extends Component{
     }
 }
 
-export default Clients;
+Clients.propTypes = {
+    t: PropTypes.func.isRequired,
+};
+
+export default translate(Clients);

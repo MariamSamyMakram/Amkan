@@ -4,14 +4,18 @@ import {Container ,Row ,Col} from 'react-bootstrap';
 // style
 import './Partners.scss';
 
+import PropTypes from 'prop-types';
+import {translate} from 'react-switch-lang';
+
 class Partners extends Component{
     render(){
+        const { t} = this.props
         return(
             <section className="Partners pt-5 pb-5">
                 <Container>
                     <Row>
                         <Col lg={3} className="d-flex justify-content-center align-items-center">
-                            <h1 className="pt-3">Partners</h1>
+                            <h1 className="pt-3">{t('partners')}</h1>
                         </Col>
                         <Col lg={9}>
                             <ul className="mb-0 list-unstyled d-flex justify-content-between">
@@ -27,4 +31,8 @@ class Partners extends Component{
     }
 }
 
-export default Partners;
+Partners.propTypes = {
+    t: PropTypes.func.isRequired,
+};
+
+export default translate(Partners);

@@ -9,6 +9,7 @@ import {translate ,getLanguage} from 'react-switch-lang';
 
 class Message extends Component{
     render(){
+        const { t} = this.props
         return(
             <section className="message pt-5 pb-5">
                 <Container>
@@ -16,12 +17,11 @@ class Message extends Component{
                         <Col lg={4} md={4} className="bg_person mb-5 mb-md-0">
                             <img src={'images/person.png'} alt={'bg'} />
                         </Col>
-                        <Col lg={8} md={8} className={getLanguage()==='he'?'text-right':'text-left'}>
-                            <h1 className="mb-4">Chairman’s Message:</h1>
+                        <Col lg={8} md={8} className={getLanguage()==='he' || getLanguage()==='ar'?'text-right':'text-left'}>
+                            <h1 className="mb-4">{t('message.title')}</h1>
                             <div className="body_message">
-                                <p>“AMKAN Investments has been based on partners appreciation, market knowledge, and strong financial capital.
-                                    <br/> We take a broader approach and carefully scrutinize our partners’ interests for a long-term sustainable relation”</p>
-                                <h5>H.H. Abdullah Mohammed Khaled Al Nahyan</h5>
+                                <p>{t('message.p')}</p>
+                                <h5>{t('message.name')}</h5>
                             </div>
                         </Col>
                     </Row>

@@ -1,0 +1,82 @@
+{
+    "headertop":{
+        "en":"English",
+        "ar":"Arabic",
+        "he":"Hebrew",
+        "ch":"Chinese"
+    },
+    "header":{
+        "home": "Home",
+        "about":"About",
+        "strategy":"Strategy",
+        "team":"Team",
+        "client":"Clients / Pertners",
+        "contact":"Contact Us"
+    },
+    "banner":{
+        "title":"Appreciating our partners",
+        "p":"AMKAN has a disciplined, detailed, and standardized investment strategy. We offer comprehensive business access to various enterprises worldwide."
+    },
+    "partners":"Partners",
+    "who":{
+        "title":"Who we are",
+        "p":"AMKAN is a private prestige investment company that provides a range of active investment strategies to serve a broad spectrum of clients’ and partners’ needs."
+    },
+    "vission":{
+        "title":"Vission",
+        "p":"UAE in Origin, Global in Scope. Becoming the ultimate bridge between foreign enterprises and UAE."
+    },
+    "mission":{
+        "title":"Mission",
+        "p":"AMKAN is committed to providing business gateways to foreign enterprises, and value investing in foreign and local companies to create effective joint ventures"
+    },
+    "values":{
+        "title":"Our values",
+        "h1_1":"A",
+        "h2_1":"Appreciating our partners",
+        "p_1":"We continuously work in building a trustworthy, loyal, and long-life business partnership.",
+        "h1_2":"M",
+        "h2_2":"Mutual benefits",
+        "p_2":"Ensuring an ongoing commitment for fruitful collaboration.",
+        "h1_3":"K",
+        "h2_3":"Keenness",
+        "p_3":"Our expertise in global investments stimulates a successful outcome for our partners.",
+        "h1_4":"A",
+        "h2_4":"Accomplishment",
+        "p_4":"We have established a great number of partnerships and strive to continue implementing projects in Amkan and the region.",
+        "h1_5":"N",
+        "h2_5":"Nobility",
+        "p_5":"The virtue of Nobility directs the relationship between Amkan and its Partners."
+    },
+    "message":{
+        "title":"Chairman’s Message:",
+        "p":"“AMKAN Investments has been based on partners appreciation, market knowledge, and strong financial capital. We take a broader approach and carefully scrutinize our partners’ interests for a long-term sustainable relation”",
+        "name":"H.H. Abdullah Mohammed Khaled Al Nahyan"
+    },
+    "strategies":{
+        "title":"Our Strategies",
+        "p":"“ We Drive You To Excellence Not Just Success!”",
+        "h1_1":"Investing in Foreign Enterprises",
+        "p1_1":"Opening the gates to the multinational promised enterprises to take place in UAE business community",
+        "h1_2":"Establishing Joint Ventures",
+        "p1_2":"Creating the chance for business expansions and development while moving into Emirati market",
+        "h1_3":"Providing Business Access",
+        "p1_3":"Providing your business access to the Emirati established markets and distribution channels"
+    },
+    "clients":{
+        "title":"Clients",
+        "p":"Our Clients Are Our Priority"
+    },
+    "footer":{
+        "title":"Venues",
+        "address_title":"Address ",
+        "address":" Lorem ipsum dolor sit amet,",
+        "phone":"+971 123 456 789",
+        "copyright1":"© 2020.",
+        "copyright2":"AMKAN",
+        "copyright3":" - All Rights Reserved",
+        "p":"Be first to know about the latest updates",
+        "email":"Email Address",
+        "subscirbe":"Subscribe"
+    }
+}

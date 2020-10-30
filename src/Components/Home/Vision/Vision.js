@@ -9,6 +9,7 @@ import {translate ,getLanguage} from 'react-switch-lang';
 
 class Vision extends Component{
     render(){
+        const { t} = this.props
         return(
             <div className="Vision pt-5 pb-4">
                 <Container>
@@ -21,12 +22,14 @@ class Vision extends Component{
                                 </Col>
                                 <Col lg={8} sm={8} className="mt-sm-5 pt-sm-2 pt-md-5">
                                     <Tabs defaultActiveKey="Vission" id="uncontrolled-tab-example">
-                                        <Tab eventKey="Vission" title="VISSION" >
-                                            <p className={getLanguage()==='he'?'text-right':'text-left'}>UAE in Origin, Global in Scope. Becoming the ultimate bridge between foreign enterprises and UAE.</p>
+                                        <Tab eventKey="Vission" title={t('vission.title')} >
+                                            <p className={getLanguage()==='he' || getLanguage()==='ar'?'text-right':'text-left'}>
+                                            {t('vission.p')}
+                                            </p>
                                         </Tab>
-                                        <Tab eventKey="Mission" title="MISSION">
-                                            <p className={getLanguage()==='he'?'text-right':'text-left'}>
-                                            AMKAN is committed to providing business gateways to foreign enterprises, and value investing in foreign and local companies to create effective joint ventures
+                                        <Tab eventKey="Mission" title={t('mission.title')}>
+                                            <p className={getLanguage()==='he' || getLanguage()==='ar'?'text-right':'text-left'}>
+                                            {t('mission.p')}                                           
                                             </p>
                                         </Tab>
                                     </Tabs>

@@ -9,6 +9,7 @@ import {translate ,getLanguage} from 'react-switch-lang';
 
 class Strategy extends Component{
     render(){
+        const { t} = this.props
         return(
             <section className="Strategy pt-5 mt-5 pb-5">
                 <Container>
