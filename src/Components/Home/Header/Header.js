@@ -19,7 +19,9 @@ class Header extends Component{
                 <Container>
                     <Navbar expand="lg">
                         <Navbar.Brand href="#home">
-                            <img src="images/logo2.png" alt={'logo'}/>
+                            <NavLink  to="/">
+                                <img src="images/logo2.png" alt={'logo'}/>    
+                            </NavLink>
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav">
                             <FontAwesomeIcon icon={faBars} />
