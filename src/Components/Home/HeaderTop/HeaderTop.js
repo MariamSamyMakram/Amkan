@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import {Container ,Row ,Col ,Dropdown, Form} from 'react-bootstrap';
+import {Container ,Row ,Col ,Dropdown} from 'react-bootstrap';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 // style
 import './HeaderTop.scss';
 
@@ -14,6 +12,7 @@ import {
     setLanguageCookie,
     setLanguage,
     translate,
+    getLanguage
 } from 'react-switch-lang';
 
 import en from '../../../lang/en.json';
@@ -26,7 +25,7 @@ setTranslations({ en, he ,ar ,ch });
 setDefaultLanguage('en');
  
 // If you want to remember selected language
-setLanguageCookie();
+setLanguageCookie('language');
 
 
 class HeaderTop extends Component{
@@ -34,7 +33,7 @@ class HeaderTop extends Component{
         setLanguage(key);
     };
     render(){
-        const { t} = this.props
+        const { t } = this.props
         return(
             <section className="HeaderTop">
                 <Container fluid>
@@ -58,7 +57,7 @@ class HeaderTop extends Component{
 
                                     <Dropdown>
                                         <Dropdown.Toggle  id="dropdown-basic">
-                                            {t('headertop.en')}
+                                            {t('headertop.'+getLanguage())}
                                         </Dropdown.Toggle>
 
                                         <Dropdown.Menu>
