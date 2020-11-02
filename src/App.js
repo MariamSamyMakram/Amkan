@@ -24,7 +24,7 @@ import Client from './Pages/Client';
 
 
 // Footer
-// import Footer from './Components/Home/Footer/Footer';
+import Footer from './Components/Home/Footer/Footer';
 
 import {translate , getLanguage} from 'react-switch-lang';
 
@@ -63,7 +63,7 @@ function App() {
           </React.StrictMode>
 
           {/* Footer */}
-          {/* <Footer /> */}
+          <Footer />
       </div>
   </Router>
 
