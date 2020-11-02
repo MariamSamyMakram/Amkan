@@ -19,41 +19,61 @@ class Values extends Component{
                             <h1 className="text-center">{t('values.title')}</h1>
                         </Col>
                         <Col lg={12}>
-                            <ul className="mb-0 list-unstyled d-block d-lg-flex justify-content-between flex-nowrap bd-highlight">
-                                <li className="order-3 p-2 bd-highlight flex-shrink-1">
-                                    <h2 className="text-center">{t('values.h1_1')}</h2>
-                                    <p className="square_title text-center">{t('values.h2_1')}</p>
-                                    <p className={getLanguage()==='he' || getLanguage()==='ar'?'text-right':'text-left'}>
-                                    {t('values.p_1')}
-                                    </p>
+                            <ul className="mb-0 mt-5 list-unstyled ">
+                                <li className="mb-4">
+                                    <Row>
+                                        <Col lg={2} xs={2}><h2 >A</h2></Col>
+                                        <Col lg={10} xs={10}>
+                                            <p className="square_title text-center">{t('values.h2_1')}</p>
+                                            <p className={getLanguage()==='he' || getLanguage()==='ar'?'text-right':'text-left'}>
+                                            {t('values.p_1')}
+                                            </p>
+                                        </Col>
+                                    </Row>
                                 </li>
-                                <li className="order-3 p-2 bd-highlight flex-shrink-1">
-                                    <h2 className="text-center">{t('values.h1_2')}</h2>
-                                    <p className="square_title text-center">{t('values.h2_2')}</p>
-                                    <p className={getLanguage()==='he' || getLanguage()==='ar'?'text-right':'text-left'}>
-                                    {t('values.p_2')}
-                                    </p>
+                                <li className="mb-4">
+                                    <Row>
+                                        <Col lg={2} xs={2}><h2 >M</h2></Col>
+                                        <Col lg={10} xs={10}>
+                                            <p className="square_title text-center">{t('values.h2_2')}</p>
+                                            <p className={getLanguage()==='he' || getLanguage()==='ar'?'text-right':'text-left'}>
+                                            {t('values.p_2')}
+                                            </p>
+                                        </Col>
+                                    </Row>                                    
                                 </li>
-                                <li className="order-3 p-2 bd-highlight flex-shrink-1">
-                                    <h2 className="text-center">{t('values.h1_3')}</h2>
-                                    <p className="square_title text-center">{t('values.h2_3')}</p>
-                                    <p className={getLanguage()==='he' || getLanguage()==='ar'?'text-right':'text-left'}>
-                                    {t('values.p_3')}
-                                    </p>
+                                <li className="mb-4">
+                                    <Row>
+                                        <Col lg={2} xs={2}><h2 >K</h2></Col>
+                                        <Col lg={10} xs={10}>
+                                            <p className="square_title text-center">{t('values.h2_3')}</p>
+                                            <p className={getLanguage()==='he' || getLanguage()==='ar'?'text-right':'text-left'}>
+                                            {t('values.p_3')}
+                                            </p>
+                                        </Col>
+                                    </Row>   
                                 </li>
-                                <li className="order-3 p-2 bd-highlight flex-shrink-1">
-                                    <h2 className="text-center">{t('values.h1_4')}</h2>
-                                    <p className="square_title text-center">{t('values.h2_4')}</p>
-                                    <p className={getLanguage()==='he' || getLanguage()==='ar'?'text-right':'text-left'}>
-                                    {t('values.p_4')}
-                                    </p>
+                                <li className="mb-4">
+                                    <Row>
+                                        <Col lg={2} xs={2}><h2 >A</h2></Col>
+                                        <Col lg={10} xs={10}>
+                                            <p className="square_title text-center">{t('values.h2_4')}</p>
+                                            <p className={getLanguage()==='he' || getLanguage()==='ar'?'text-right':'text-left'}>
+                                            {t('values.p_4')}
+                                            </p>
+                                        </Col>
+                                    </Row>  
                                 </li>
-                                <li className="order-3 p-2 bd-highlight flex-shrink-1">
-                                    <h2 className="text-center">{t('values.h1_5')}</h2>
-                                    <p className="square_title text-center">{t('values.h2_5')}</p>
-                                    <p className={getLanguage()==='he' || getLanguage()==='ar'?'text-right':'text-left'}>
-                                        {t('values.p_5')}
-                                    </p>
+                                <li className="mb-4">
+                                    <Row>
+                                        <Col lg={2} xs={2}><h2 >N</h2></Col>
+                                        <Col lg={10} xs={10}>
+                                            <p className="square_title text-center">{t('values.h2_5')}</p>
+                                            <p className={getLanguage()==='he' || getLanguage()==='ar'?'text-right':'text-left'}>
+                                                {t('values.p_5')}
+                                            </p>
+                                        </Col>
+                                    </Row>                                    
                                 </li>
                             </ul>
                         </Col>

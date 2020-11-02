@@ -16,7 +16,7 @@ class Home extends Component{
         return(
             <>
                 <Banner />
-                <Partners />
+                {/* <Partners />
                 <section className="bg">
                     <Who />
                     <Vision />
@@ -24,7 +24,7 @@ class Home extends Component{
                     <Message />
                     <Strategies />
                     <Clients />
-                </section>  
+                </section>   */}
             </>
         );
     }

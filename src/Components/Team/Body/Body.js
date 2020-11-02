@@ -17,22 +17,64 @@ class Body extends Component{
                         <Col lg={1}></Col>
                         <Col lg={10} className="text-center p-5">
                             <h1>{t('team.title')}</h1>
-                            <p>
+                            <p className="text-center">
                             {t('team.p')}
                             </p>
                         </Col>
                         <Col lg={1}></Col>
-                        <Col lg={3} sm={6}>
+                        <Col lg={12}>
+                            <ul className="list-unstyled mb-0 p-0">
+                                <li className="mb-5">
+                                    <Row>
+                                        <Col lg={6} sm={7}>
+                                            <h2 className={getLanguage()==='he' || getLanguage() === 'ar'?'text-right':'text-left'}><b>{t('team.name1')}</b></h2>
+                                            <h4 className={getLanguage()==='he' || getLanguage() === 'ar'?'text-right':'text-left'}> {t('team.job1')}</h4>
+                                            <p className="text-justify mt-5">
+                                            {t('team.p1')}
+                                            </p>
+                                        </Col>
+                                        <Col lg={6} sm={5} className="d-flex justify-content-center align-items-center">
+                                            <img src={'images/team3.png'} alt={''}/>
+                                        </Col>
+                                    </Row>
+                                </li>
+                                <li className="mb-5">
+                                    <Row>
+                                        <Col lg={6} sm={7}>
+                                            <h2 className={getLanguage()==='he' || getLanguage() === 'ar'?'text-right':'text-left'}><b>{t('team.name2')}</b></h2>
+                                            <h4 className={getLanguage()==='he' || getLanguage() === 'ar'?'text-right':'text-left'}> {t('team.job2')}</h4>
+                                            <p className="text-justify mt-5">
+                                            {t('team.p2')}
+                                            </p>
+                                        </Col>
+                                        <Col lg={6} sm={5} className="d-flex justify-content-center align-items-center">
+                                            <img src={'images/team2.png'} alt={''}/>
+                                        </Col>
+                                    </Row>
+                                </li>
+                                <li className="mb-5">
+                                    <Row>
+                                        <Col lg={6} sm={7}>
+                                            <h2 className={getLanguage()==='he' || getLanguage() === 'ar'?'text-right':'text-left'}><b>{t('team.name3')}</b></h2>
+                                            <h4 className={getLanguage()==='he' || getLanguage() === 'ar'?'text-right':'text-left'}> {t('team.job3')}</h4>
+                                            <p className="text-justify mt-5">
+                                            {t('team.p3')}
+                                            </p>
+                                        </Col>
+                                        <Col lg={6} sm={5} className="d-flex justify-content-center align-items-center">
+                                            <img src={'images/team1.png'} alt={''}/>
+                                        </Col>
+                                    </Row>
+                                </li>
+                            </ul>
+                        </Col>
+                        {/* <Col lg={3} sm={6}>
                             <div className="team_overlay">
-                                <img src={'images/team3.png'} alt={''}/>
                                 <div className={getLanguage()==='he'?'right overlay':'left overlay'}>
-                                    <p className="mb-0"><b>{t('team.name1')}</b></p>
-                                    <p className="job mb-0"> {t('team.job1')}</p>
+                                    
                                 </div>
                             </div>
-                            <p className={getLanguage()==='he'?'text-right mt-5':'text-left mt-5'}>
-                            {t('team.p1')}
-                            </p>
+                           
                         </Col>
                         <Col lg={3} sm={6}>
                             <div className="team_overlay">
@@ -69,7 +111,8 @@ class Body extends Component{
                             <p className={getLanguage()==='he'?'text-right mt-5':'text-left mt-5'}>
                                 {t('team.p4')}
                             </p>
-                        </Col>
+                        </Col> */}
+                        
                     </Row>
                 </Container>
             </section>

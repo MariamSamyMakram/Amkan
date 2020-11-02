@@ -15,67 +15,19 @@
                 color: $yollow;
                 font-size: 90px;
                 font-family: 'times';
+                text-align: center;
             }
             .square_title{
                 color: $black;
                 background-color: $yollow;
                 padding: 8px;
                 font-family: 'Lota';
+                width: 200px;
             }
             p{
                 color: $white;
-                width: 200px;
                 font-size: 16px;
                 font-family: 'Lota';
-            }
-        }
-    }
-}
-
-@media (max-width: 575.98px){
-    .Values{
-        ul{
-            li{
-                p{width: 100%;}
-            }
-        }
-    }
-
-}
-
-/* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width: 767.98px) {
-    .Values{
-        ul{
-            padding: 0 90px;
-            li{
-                p{width: 100%;}
-            }
-        }
-    }
-}
-
-
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991.98px) {
-    .Values{
-        ul{
-            padding: 0 90px;
-            li{
-                p{width: 100%;}
-            }
-        }
-    }
-}
-
-
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199.98px) { 
-    .Values{
-        ul{
-            li{
-                .square_title{font-size: 12px;}
-                p{width: 165px;font-size: 12px;}
             }
         }
     }

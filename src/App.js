@@ -15,7 +15,8 @@ import Header from './Components/Home/Header/Header';
 
 // pages
 import Home from './Pages/Home';
-import About from './Pages/About';
+import AboutAmkan from './Pages/AboutAmkan';
+import ChairmanMessage from './Pages/ChairmanMessage';
 import Strategies from './Pages/Strategies';
 import Team from './Pages/Team';
 import Contact from './Pages/Contact';
@@ -23,7 +24,7 @@ import Client from './Pages/Client';
 
 
 // Footer
-import Footer from './Components/Home/Footer/Footer';
+// import Footer from './Components/Home/Footer/Footer';
 
 import {translate , getLanguage} from 'react-switch-lang';
 
@@ -40,7 +41,7 @@ function App() {
                   <Route path="/contact">
                       <Contact />
                   </Route>
-                  <Route path="/clients">
+                  <Route path="/clientsPartners">
                       <Client />
                   </Route>
                   <Route path="/team">
@@ -49,8 +50,11 @@ function App() {
                   <Route path="/strategy">
                       <Strategies />
                   </Route>
-                  <Route path="/about">
-                      <About />
+                  <Route path="/chairmanMessage">
+                      <ChairmanMessage />
+                  </Route>
+                  <Route path="/aboutAmkan">
+                      <AboutAmkan />
                   </Route>
                   <Route path="/" exact>
                       <Home />
@@ -59,7 +63,7 @@ function App() {
           </React.StrictMode>
 
           {/* Footer */}
-          <Footer />
+          {/* <Footer /> */}
       </div>
   </Router>
 

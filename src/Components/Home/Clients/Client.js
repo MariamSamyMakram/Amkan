@@ -48,5 +48,17 @@ export const Client = [
         "image":"/images/Clients/client14.svg",
         "url":"https://cdn.emaar.com/"
     },
+    {
+        "image":"/images/Clients/partner1.png",
+        "url":""
+    },
+    {
+        "image":"/images/Clients/partner2.png",
+        "url":""
+    },
+    {
+        "image":"/images/Clients/partner3.png",
+        "url":""
+    },
     
 ];

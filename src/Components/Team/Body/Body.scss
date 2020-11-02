@@ -13,52 +13,41 @@
         color: $white;
         font-family: 'Lota';
     }
-    .team_overlay{
-        position: relative;
-        height: 350px;
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: fill;
-            display: block;
-        }
-        .overlay{
-            position: absolute;
-            bottom: 0;
-            z-index: 2;
-            background-color: rgba($color: $black, $alpha: 0.6);
-            width: 0%;
-            height: 60px;
-            overflow: hidden;
-            transition: ease width 0.5s;
-            p{ 
-                font-size: 14px;
-                margin-top: 12px;
-                font-family: 'times';
+    img{
+        width: 60%;
+        height: 320px;
+        object-fit: fill;
+        border: 1px solid $yollow;
+    }
+    h2{
+        color: $white;
+        border-bottom: 1px solid $yollow;
+        padding-bottom: 5px;
+    }
+    h4{color: $yollow;}
+    
+}
+@media (max-width: 575.98px){
 
-            }
-            .job{
-                font-size: 11px; 
-                margin-left: 20px;
-                margin-top: 0;
-                font-family: 'Lota';
-            }
-        }
-        .left{
-            left: 0;
-            text-align: left;
-            p{margin-left: 20px;}
-            .job{margin-left: 20px;}
-        }
-        .right{
-            right: 0;
-            text-align: right;
-            p{margin-right: 20px;}
-            .job{margin-right: 20px;}
-        }
+    .body{
+        p{font-size: 11px;}
+        img{width: 100%;}
+    }
 
-        &:hover{
-            .overlay{width: 75%;}
-        }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .body{
+        p{font-size: 11px;}
+        img{width: 100%; height: 235px;}
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .body{
+        p{font-size: 11px;}
+        img{width: 100%; height: 235px;}
     }
 }

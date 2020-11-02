@@ -11,11 +11,11 @@ class Message extends Component{
     render(){
         const { t} = this.props
         return(
-            <section className="message pt-5 pb-5">
-                <Container>
+            <section className="message pt-5 pb-5 mt-5">
+                <Container className="mt-md-5">
                     <Row>
                         <Col lg={4} md={4} className="bg_person mb-5 mb-md-0">
-                            <img src={'images/person.png'} alt={'bg'} />
+                            <img src={'images/person.png'} alt={'bg'} className={getLanguage()==='he' || getLanguage()==='ar'?'rotate180':'rotate0'}/>
                         </Col>
                         <Col lg={8} md={8} className={getLanguage()==='he' || getLanguage()==='ar'?'text-right':'text-left'}>
                             <h1 className="mb-4">{t('message.title')}</h1>

@@ -22,24 +22,24 @@ class FormContact extends Component{
                         <Col lg={5} md={6} className="mt-5">
                             <h1 className={getLanguage()==='he' || getLanguage()==='ar'?'text-right mb-4':'text-left mb-4'}>{t('contact.title')}</h1>
                             <ul className="mb-0 list-unstyled p-0">
-                                <li>
+                                {/* <li>
                                     <Row>
                                         <Col lg={2} xs={4}><div className="square"><FontAwesomeIcon icon={faPhoneAlt}/></div></Col>
                                         <Col lg={10} xs={8} className="d-flex justify-content-start align-items-center"><p>+971 123 456 789</p></Col>
                                     </Row>
-                                </li>
+                                </li> */}
                                 <li>
                                     <Row>
                                         <Col lg={2} xs={4}><div className="square"><FontAwesomeIcon icon={faEnvelope}/></div></Col>
                                         <Col lg={10} xs={8} className="d-flex justify-content-start align-items-center"><a href="#">info@amkan.com</a></Col>
                                     </Row>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <Row>
                                         <Col lg={2} xs={4}><div className="square"><FontAwesomeIcon icon={faMapMarkerAlt}/></div></Col>
                                         <Col lg={10} xs={8} className="d-flex justify-content-start align-items-center"><p>102 street 2300</p></Col>
                                     </Row>
-                                </li>
+                                </li> */}
                             </ul>
                         </Col>
                         <Col lg={5} md={6} className="mt-5">

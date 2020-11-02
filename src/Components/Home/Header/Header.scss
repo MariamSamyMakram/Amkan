@@ -38,6 +38,19 @@
             opacity: 1;
         }
     }
+    .dropdown-menu{
+        .dropdown-item{
+            padding: 10px 30px;
+            &:active {
+                color: #fff;
+                background-color: $yollow;
+            }
+            &:hover {
+                color: #fff;
+                background-color: $yollow;
+            }
+        }
+    }
 }
 
 @media (max-width: 575.98px){
