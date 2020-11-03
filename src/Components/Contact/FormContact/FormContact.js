@@ -28,7 +28,7 @@ class FormContact extends Component{
                                         <Col lg={10} xs={8} className="d-flex justify-content-start align-items-center"><p>+971 123 456 789</p></Col>
                                     </Row>
                                 </li> */}
-                                <li className={getLanguage()==='ar'?'GE_SS':'lota'}>>
+                                <li className={getLanguage()==='ar'?'GE_SS':'lota'}>
                                     <Row>
                                         <Col lg={2} xs={4}><div className="square"><FontAwesomeIcon icon={faEnvelope}/></div></Col>
                                         <Col lg={10} xs={8} className="d-flex justify-content-start align-items-center"><a href="#">info@amkan.com</a></Col>
