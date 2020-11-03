@@ -39,16 +39,20 @@
         }
     }
     .dropdown-menu{
+        .dropdown-item.active{
+            color: #fff !important;
+            background-color: $yollow;
+        }
         .dropdown-item{
             padding: 10px 30px;
             &:active {
                 color: #fff;
                 background-color: $yollow;
             }
-            &:hover {
-                color: #fff;
-                background-color: $yollow;
-            }
+            // &:hover {
+            //     color: #fff;
+            //     background-color: $yollow;
+            // }
         }
     }
 }

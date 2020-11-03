@@ -31,8 +31,8 @@ class Header extends Component{
                                 <NavLink className="nav-link" exact to="/">{t('header.home')}</NavLink>
                                 {/* <NavLink className="nav-link"  to="/about">{t('header.about')}</NavLink> */}
                                 <NavDropdown title={t('header.about')} id="basic-nav-dropdown">
-                                    <NavDropdown.Item  href="/aboutAmkan">About Amkan</NavDropdown.Item >
-                                    <NavDropdown.Item  href="/chairmanMessage">Chairman’s Message</NavDropdown.Item >
+                                    <NavLink  className={getLanguage()==='he' || getLanguage()==='ar'?'text-right dropdown-item':'text-left dropdown-item'} to="/aboutAmkan">About Amkan</NavLink >
+                                    <NavLink  className={getLanguage()==='he' || getLanguage()==='ar'?'text-right dropdown-item':'text-left dropdown-item'} to="/chairmanMessage">Chairman’s Message</NavLink >
                                 </NavDropdown>
                                 <NavLink className="nav-link"  to="/strategy">{t('header.strategy')}</NavLink>
                                 <NavLink className="nav-link"  to="/team">{t('header.team')}</NavLink>
