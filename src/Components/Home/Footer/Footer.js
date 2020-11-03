@@ -26,13 +26,13 @@ class Footer extends Component{
                                 <Col lg={8} xs={8} className={getLanguage()==='he' || getLanguage()==='ar'?'text-right':'text-left'}>
                                     <h3 className="mb-3">{t('footer.title')}</h3>
                                     <p className="mb-1" >{t('footer.address_title')} : </p>
-                                    <p className="mb-1">{t('footer.address')}</p>
-                                    <p className="mb-1">{t('footer.phone')}</p>
+                                    <p className="mb-1">info@amkan.com</p>
                                 </Col>
                                 <Col lg={4} xs={4} className={getLanguage()==='he' || getLanguage()==='ar'?'text-right pr-0 pl-0':'text-left pr-0 pl-0'}>
                                     <ul className={getLanguage()==='he' || getLanguage()==='ar'?'pr-0 mb-0 list-unstyled':'pl-0 mb-0 list-unstyled'}>
                                         <li className="mb-1"><NavLink exact to="/">{t('header.home')}</NavLink></li>
-                                        <li className="mb-1"><NavLink  to="/about">{t('header.about')}</NavLink></li>
+                                        <li className="mb-1"><NavLink  to="/aboutAmkan">{t('header.about_amkan')}</NavLink ></li>
+                                        <li className="mb-1"><NavLink  to="/chairmanMessage">{t('header.ChairmanMessage')}</NavLink ></li>
                                         <li className="mb-1"><NavLink  to="/strategy">{t('header.strategy')}</NavLink></li>
                                         <li className="mb-1"><NavLink  to="/team">{t('header.team')}</NavLink></li>
                                         <li className="mb-1"><NavLink  to="/clients">{t('header.client')}</NavLink></li>

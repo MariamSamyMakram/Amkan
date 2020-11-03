@@ -8,6 +8,8 @@
     "header":{
         "home": "Home",
         "about":"About",
+        "about_amkan":"About Amkan",
+        "ChairmanMessage":"Chairman’s Message",
         "strategy":"Strategy",
         "team":"Team",
         "client":"Clients / Partners",

@@ -8,6 +8,8 @@
     "header":{
         "home": "בית",
         "about":"על אודות",
+        "about_amkan":"אודות Amkan",
+        "ChairmanMessage":"הודעת היו\"ר",
         "strategy":"אִסטרָטֶגִיָה",
         "team":"קְבוּצָה",
         "client":"לקוחות / רלוונטים",

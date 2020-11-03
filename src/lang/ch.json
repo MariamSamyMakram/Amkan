@@ -8,6 +8,8 @@
     "header":{
         "home": "家",
         "about":"關於",
+        "about_amkan":"关于Amkan",
+        "ChairmanMessage":"董事长致辞",
         "strategy":"戰略",
         "team":"球隊",
         "client":"客戶/表演者",
