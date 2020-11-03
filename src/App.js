@@ -32,7 +32,7 @@ function App() {
     console.log(getLanguage());
   return (
     <Router onUpdate={() => window.scrollTo(0, 0)}>
-      <div className="App" dir={getLanguage()==='he' || getLanguage()==='ar'?'rtl':'ltr'}>
+      <div className={getLanguage()==='ar'?'GE_SS App':'App times lota'} dir={getLanguage()==='he' || getLanguage()==='ar'?'rtl':'ltr'}>
           <HeaderTop />
           <Header/>
           <React.StrictMode>
