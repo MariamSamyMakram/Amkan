@@ -15,7 +15,7 @@ class Header extends Component{
     render(){
         const { t} = this.props
         return(
-            <section className="header">
+            <section className={getLanguage()==='ar'?'GE_SS header':'header lota'}>
                 <Container>
                     <Navbar expand="lg">
                         <Navbar.Brand href="#home">

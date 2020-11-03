@@ -16,8 +16,8 @@ class Body extends Component{
                     <Row>
                         <Col lg={1}></Col>
                         <Col lg={10} className="text-center p-5">
-                            <h1>{t('team.title')}</h1>
-                            <p className="text-center">
+                            <h1 className={getLanguage()==='ar'?'GE_SS':' times'}>{t('team.title')}</h1>
+                            <p  className={getLanguage()==='ar'?'GE_SS':'lota'}>
                             {t('team.p')}
                             </p>
                         </Col>
@@ -27,9 +27,9 @@ class Body extends Component{
                                 <li className="mb-5">
                                     <Row>
                                         <Col lg={6} sm={7}>
-                                            <h2 className={getLanguage()==='he' || getLanguage() === 'ar'?'text-right':'text-left'}><b>{t('team.name1')}</b></h2>
-                                            <h4 className={getLanguage()==='he' || getLanguage() === 'ar'?'text-right':'text-left'}> {t('team.job1')}</h4>
-                                            <p className="text-justify mt-5">
+                                            <h2 className={getLanguage()==='he' || getLanguage() === 'ar'?'text-right GE_SS':'text-left times'}><b>{t('team.name1')}</b></h2>
+                                            <h4 className={getLanguage()==='he' || getLanguage() === 'ar'?'text-right GE_SS':'text-left times'}> {t('team.job1')}</h4>
+                                            <p  className={getLanguage()==='ar'?'GE_SS text-justify mt-5':'lota text-justify mt-5'}>
                                             {t('team.p1')}
                                             </p>
                                         </Col>
@@ -41,9 +41,9 @@ class Body extends Component{
                                 <li className="mb-5">
                                     <Row>
                                         <Col lg={6} sm={7}>
-                                            <h2 className={getLanguage()==='he' || getLanguage() === 'ar'?'text-right':'text-left'}><b>{t('team.name2')}</b></h2>
-                                            <h4 className={getLanguage()==='he' || getLanguage() === 'ar'?'text-right':'text-left'}> {t('team.job2')}</h4>
-                                            <p className="text-justify mt-5">
+                                            <h2 className={getLanguage()==='he' || getLanguage() === 'ar'?'text-right GE_SS':'text-left times'}><b>{t('team.name2')}</b></h2>
+                                            <h4 className={getLanguage()==='he' || getLanguage() === 'ar'?'text-right GE_SS':'text-left times'}> {t('team.job2')}</h4>
+                                            <p  className={getLanguage()==='ar'?'GE_SS text-justify mt-5':'lota text-justify mt-5'}>
                                             {t('team.p2')}
                                             </p>
                                         </Col>
@@ -55,9 +55,9 @@ class Body extends Component{
                                 <li className="mb-5">
                                     <Row>
                                         <Col lg={6} sm={7}>
-                                            <h2 className={getLanguage()==='he' || getLanguage() === 'ar'?'text-right':'text-left'}><b>{t('team.name3')}</b></h2>
-                                            <h4 className={getLanguage()==='he' || getLanguage() === 'ar'?'text-right':'text-left'}> {t('team.job3')}</h4>
-                                            <p className="text-justify mt-5">
+                                            <h2 className={getLanguage()==='he' || getLanguage() === 'ar'?'text-right GE_SS':'text-left times'}><b>{t('team.name3')}</b></h2>
+                                            <h4 className={getLanguage()==='he' || getLanguage() === 'ar'?'text-right GE_SS':'text-left times'}> {t('team.job3')}</h4>
+                                            <p  className={getLanguage()==='ar'?'GE_SS text-justify mt-5':'lota text-justify mt-5'}>
                                             {t('team.p3')}
                                             </p>
                                         </Col>

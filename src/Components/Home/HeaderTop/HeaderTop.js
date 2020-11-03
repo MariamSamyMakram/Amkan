@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import {Container ,Row ,Col ,Dropdown, Form} from 'react-bootstrap';
+import {Container ,Row ,Col ,Dropdown} from 'react-bootstrap';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 // style
 import './HeaderTop.scss';
 
@@ -14,6 +12,7 @@ import {
     setLanguageCookie,
     setLanguage,
     translate,
+    getLanguage
 } from 'react-switch-lang';
 
 import en from '../../../lang/en.json';
@@ -26,7 +25,7 @@ setTranslations({ en, he ,ar ,ch });
 setDefaultLanguage('en');
  
 // If you want to remember selected language
-setLanguageCookie();
+setLanguageCookie('language');
 
 
 class HeaderTop extends Component{
@@ -34,9 +33,9 @@ class HeaderTop extends Component{
         setLanguage(key);
     };
     render(){
-        const { t} = this.props
+        const { t } = this.props
         return(
-            <section className="HeaderTop">
+            <section className={getLanguage()==='ar'?'GE_SS HeaderTop':'HeaderTop lota'}>
                 <Container fluid>
                     <Row>
                         <Col lg={10}></Col>
@@ -45,20 +44,9 @@ class HeaderTop extends Component{
                                 <li className="mr-2"><a target="_blank" href="https://www.linkedin.com/company/amkan-investments/" className="in"><b>in</b></a></li>
                                 <li className="mr-2 ml-2">|</li>
                                 <li>
-                                    {/* <Form>
-                                        <Form.Group controlId="exampleForm.ControlSelect1">
-                                            <Form.Control as="select">
-                                                <option onClick={this.handleSetLanguage('en')} value="en"> <FontAwesomeIcon icon={faGlobe} />{t('headertop.en')}</option>
-                                                <option onClick={this.handleSetLanguage('he')} value="he">{t('headertop.he')}</option>
-                                                <option onClick={this.handleSetLanguage('ar')} value="ar">{t('headertop.ar')}</option>
-                                                <option onClick={this.handleSetLanguage('ch')} value="ch">{t('headertop.ch')}</option>
-                                            </Form.Control>
-                                        </Form.Group>
-                                    </Form> */}
-
                                     <Dropdown>
                                         <Dropdown.Toggle  id="dropdown-basic">
-                                            {t('headertop.en')}
+                                            {t('headertop.'+getLanguage())}
                                         </Dropdown.Toggle>
 
                                         <Dropdown.Menu>

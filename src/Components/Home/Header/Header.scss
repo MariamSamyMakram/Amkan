@@ -14,7 +14,7 @@
         cursor: pointer;
         padding: 5px 20px !important;
         position: relative;
-        font-family: 'Lota';
+        // font-family: 'Lota';
         &::after{
             content: ' ';
             position: absolute;
@@ -31,7 +31,7 @@
     .active{
         color: $yollow !important;
         position: relative;
-        font-family: 'Lota';
+        // font-family: 'Lota';
         &::after{
             content: ' ';
             width: 100%;

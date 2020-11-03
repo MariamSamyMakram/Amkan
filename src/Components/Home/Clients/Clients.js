@@ -8,7 +8,7 @@ import { faAngleLeft , faAngleRight} from '@fortawesome/free-solid-svg-icons';
 import './Clients.scss';
 
 import PropTypes from 'prop-types';
-import {translate} from 'react-switch-lang';
+import {translate ,getLanguage} from 'react-switch-lang';
 // json 
 import {Client} from './Client';
 
@@ -82,8 +82,8 @@ class Clients extends Component{
                 <Container>
                     <Row>
                         <Col lg={12} className="text-center">
-                            <h1>{t('clients.title')}</h1>
-                            <p>{t('clients.p')}</p>
+                            <h1 className={getLanguage()==='ar'?'GE_SS':'times'}>{t('clients.title')}</h1>
+                            <p className={getLanguage()==='ar'?'GE_SS':'lota'}>{t('clients.p')}</p>
                         </Col>
                         <Col lg={12}>
                             <Slider {...settings}>

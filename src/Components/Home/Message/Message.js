@@ -18,10 +18,10 @@ class Message extends Component{
                             <img src={'images/person.png'} alt={'bg'} className={getLanguage()==='he' || getLanguage()==='ar'?'rotate180':'rotate0'}/>
                         </Col>
                         <Col lg={8} md={8} className={getLanguage()==='he' || getLanguage()==='ar'?'text-right':'text-left'}>
-                            <h1 className="mb-4">{t('message.title')}</h1>
+                            <h1 className={getLanguage()==='ar'?'GE_SS mb-4':' times mb-4'}>{t('message.title')}</h1>
                             <div className="body_message">
-                                <p>{t('message.p')}</p>
-                                <h5>{t('message.name')}</h5>
+                                <p className={getLanguage()==='ar'?'GE_SS':' lota'}>{t('message.p')}</p>
+                                <h5 className={getLanguage()==='ar'?'GE_SS':' times'}>{t('message.name')}</h5>
                             </div>
                         </Col>
                     </Row>

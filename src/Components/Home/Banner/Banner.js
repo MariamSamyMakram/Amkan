@@ -15,11 +15,11 @@ class Banner extends Component{
                 <Container>
                     <Row>
                         <Col lg={6} md={7}>
-                            <h1>{t('banner.title')}</h1>
+                            <h1 className={getLanguage()==='ar'?'GE_SS':' times'}>{t('banner.title')}</h1>
                         </Col>
                         <Col lg={6} md={5}></Col>
-                        <Col lg={6} md={7}>
-                            <p className={getLanguage()==='he' || getLanguage()==='ar'?'text-right':'text-left'}>
+                        <Col lg={6} md={7} className={getLanguage()==='ar'?'GE_SS ':' lota'}>
+                            <p className={getLanguage()==='he' || getLanguage()==='ar'?'text-right':'text-left'} >
                                 {t('banner.p')}
                             </p>
                         </Col>

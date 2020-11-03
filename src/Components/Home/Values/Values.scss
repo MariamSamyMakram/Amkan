@@ -7,27 +7,24 @@
         font-size: 34px;
         font-weight: bold;
         text-align: center;
-        font-family: 'times';
     }
     ul{
         li{
             h2{
                 color: $yollow;
                 font-size: 90px;
-                font-family: 'times';
                 text-align: center;
+                font-family: 'times';
             }
             .square_title{
                 color: $black;
                 background-color: $yollow;
                 padding: 8px;
-                font-family: 'Lota';
                 width: 200px;
             }
             p{
                 color: $white;
                 font-size: 16px;
-                font-family: 'Lota';
             }
         }
     }

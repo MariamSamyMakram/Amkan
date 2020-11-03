@@ -29,10 +29,11 @@ import Footer from './Components/Home/Footer/Footer';
 import {translate , getLanguage} from 'react-switch-lang';
 
 function App() {
-    console.log(getLanguage());
+  const direction = ['he','ar'].includes(getLanguage()) ? 'rtl' : 'ltr';
+
   return (
     <Router onUpdate={() => window.scrollTo(0, 0)}>
-      <div className={getLanguage()==='ar'?'GE_SS App':'App times lota'} dir={getLanguage()==='he' || getLanguage()==='ar'?'rtl':'ltr'}>
+      <div className="App" dir={direction}>
           <HeaderTop />
           <Header/>
           <React.StrictMode>

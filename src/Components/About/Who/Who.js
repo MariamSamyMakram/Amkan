@@ -17,10 +17,10 @@ class Who extends Component{
                         <Col lg={5} md={5}>
                             <img src={'images/Who.png'} alt={'Who'}/>
                         </Col>
-                        <Col lg={7} md={7}  className={getLanguage()==='he'?'text-right mt-4 mt-md-0':'text-left mt-4 mt-md-0'}>
-                            <h1 className="mb-4">{t('who.title')}</h1>
+                        <Col lg={7} md={7}  className={getLanguage()==='he' || getLanguage()==='ar'?'text-right mt-4 mt-md-0':'text-left mt-4 mt-md-0'}>
+                            <h1 className={getLanguage()==='ar'?'GE_SS mb-4':' times mb-4'}>{t('who.title')}</h1>
                             <div className="body_message">
-                                <p>{t('who.p')}</p>
+                                <p className={getLanguage()==='ar'?'GE_SS':' lota'}>{t('who.p')}</p>
                             </div>
                            
                         </Col>

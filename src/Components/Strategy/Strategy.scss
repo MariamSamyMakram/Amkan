@@ -1,21 +1,14 @@
 @import './../ColorFonts.scss';
 
 .Strategy{
-    // background-image: url('./lion_bg.png');
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-size: 100% 100%;
-
     h1{
         color: $yollow;
         text-transform: uppercase;
         font-size: 34px;
         font-weight: bold;
-        font-family: 'times';
     }
     p{
         color: $white;
-        font-family: 'Lota';
     }
     ul{
         li{
@@ -29,12 +22,10 @@
                 font-size: 15px;
                 color: $yollow;
                 font-weight: bold;
-                font-family: 'Lota';
             }
             p{
                 font-size: 13px;
                 color: $white;
-                font-family: 'Lota';
             }
         }
     }

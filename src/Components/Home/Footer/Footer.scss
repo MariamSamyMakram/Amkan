@@ -8,12 +8,12 @@
         height: auto;
         object-fit: contain;
     }
-    p{font-size: 13px; font-family: 'Lota';}
+    p{font-size: 13px;}
     a{
         color: $white;
         text-decoration: none;
         font-size: 13px;
-        font-family: 'Lota';
+        // font-family: 'Lota';
     }
     svg{
         font-size: 40px;
@@ -22,7 +22,7 @@
         color: $yollow;
     }
     .form-control{
-        font-family: 'Lota';
+        // font-family: 'Lota';
         padding: 1.5rem .75rem;
         color: $yollow;
         background-color: transparent;
@@ -30,7 +30,7 @@
         border-radius: 0;
     }
     .input-group-text{
-        font-family: 'Lota';
+        // font-family: 'Lota';
         color: $yollow;
         background-color: transparent;
         border: 1px solid $yollow;

@@ -19,7 +19,6 @@
         text-transform: uppercase;
         font-size: 34px;
         font-weight: bold;
-        font-family: 'times';
     }
     .body_message{
         background-color: rgba($color: $black, $alpha: 0.6);
@@ -29,12 +28,10 @@
             color: $white;
             font-size: 15px;
             margin-bottom: 55px;
-            font-family: 'Lota';
         }
         h5{
             color: $yollow;
             text-align: end;
-            font-family: 'times';
         }
     }
     .rotate0{

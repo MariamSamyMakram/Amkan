@@ -15,7 +15,7 @@ class Footer extends Component{
     render(){
         const { t } = this.props;
         return(
-            <section className="footer pb-5">
+            <section className={getLanguage()==='ar'?'GE_SS footer pb-5':'footer pb-5 lota'}>
                 <div className="bg">
                     <img src={'images/Layer.png'} alt={'layer'} className="Layer" />
                 </div>

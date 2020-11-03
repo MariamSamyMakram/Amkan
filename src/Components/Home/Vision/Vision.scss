@@ -13,7 +13,6 @@
             background-color: transparent;
             border-color: transparent;
             border-bottom: 2px solid !important;
-            font-family: 'times';
             color: rgba($color: $yollow, $alpha: 1);
         }
         .nav-link {
@@ -24,7 +23,6 @@
             padding: 0;
             margin-right: 35px;
             border: 0;
-            font-family: 'times';
             &:hover{border: 0;}
             &:focus{border: 0; box-shadow: none;}
         }
@@ -33,7 +31,6 @@
         p{
             font-size: 15px;
             color: $white;
-            font-family: 'Lota';
         }
     }
 }
