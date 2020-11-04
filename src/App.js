@@ -36,10 +36,10 @@ const addClass = () => loader.classList.add("loader-hide");
 
 function App() {
   const direction = ['he','ar'].includes(getLanguage()) ? 'rtl' : 'ltr';
-  useEffect(() => {
-    showLoader();
-    addClass();
-  }, []);
+  // useEffect(() => {
+  //   showLoader();
+  //   addClass();
+  // }, []);
   return (
     <Router onUpdate={() => window.scrollTo(0, 0)}>
       <div className="App" dir={direction} >
