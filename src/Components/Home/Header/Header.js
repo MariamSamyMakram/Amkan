@@ -18,11 +18,9 @@ class Header extends Component{
             <section className={getLanguage()==='ar'?'GE_SS header':'header lota'}>
                 <Container>
                     <Navbar expand="lg">
-                        <Navbar.Brand href="#home">
-                            <NavLink  to="/">
-                                <img src="images/logo2.png" alt={'logo'}/>    
-                            </NavLink>
-                        </Navbar.Brand>
+                        <NavLink  to="/">
+                            <img src="images/logo2.png" alt={'logo'}/>
+                        </NavLink>
                         <Navbar.Toggle aria-controls="basic-navbar-nav">
                             <FontAwesomeIcon icon={faBars} />
                         </Navbar.Toggle>

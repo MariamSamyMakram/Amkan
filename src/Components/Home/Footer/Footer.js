@@ -25,7 +25,7 @@ class Footer extends Component{
                             <Row>
                                 <Col lg={8} xs={8} className={getLanguage()==='he' || getLanguage()==='ar'?'text-right':'text-left'}>
                                     <h3 className="mb-3">{t('footer.title')}</h3>
-                                    <p className="mb-1" >{t('footer.address_title')} : </p>
+                                    <p className="mb-1" >{t('footer.email')} : </p>
                                     <p className="mb-1">info@amkan.ae</p>
                                 </Col>
                                 <Col lg={4} xs={4} className={getLanguage()==='he' || getLanguage()==='ar'?'text-right pr-0 pl-0':'text-left pr-0 pl-0'}>
@@ -35,7 +35,7 @@ class Footer extends Component{
                                         <li className="mb-1"><NavLink  to="/chairmanMessage">{t('header.ChairmanMessage')}</NavLink ></li>
                                         <li className="mb-1"><NavLink  to="/strategy">{t('header.strategy')}</NavLink></li>
                                         <li className="mb-1"><NavLink  to="/team">{t('header.team')}</NavLink></li>
-                                        <li className="mb-1"><NavLink  to="/clients">{t('header.client')}</NavLink></li>
+                                        <li className="mb-1"><NavLink  to="/clientsPartners">{t('header.client')}</NavLink></li>
                                         <li className="mb-1"><NavLink  to="/contact">{t('header.contact')}</NavLink></li>
                                     </ul>
                                 </Col>
