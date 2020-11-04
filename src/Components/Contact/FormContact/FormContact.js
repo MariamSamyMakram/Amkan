@@ -31,7 +31,7 @@ class FormContact extends Component{
                                 <li className={getLanguage()==='ar'?'GE_SS':'lota'}>
                                     <Row>
                                         <Col lg={2} xs={4}><div className="square"><FontAwesomeIcon icon={faEnvelope}/></div></Col>
-                                        <Col lg={10} xs={8} className="d-flex justify-content-start align-items-center"><a href="#">info@amkan.com</a></Col>
+                                        <Col lg={10} xs={8} className="d-flex justify-content-start align-items-center"><a href="#">info@amkan.ae</a></Col>
                                     </Row>
                                 </li>
                                 {/* <li>
