@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 // bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
@@ -28,12 +28,21 @@ import Footer from './Components/Home/Footer/Footer';
 
 import {translate , getLanguage} from 'react-switch-lang';
 
+// loading
+const loader = document.querySelector(".preloader");
+
+const showLoader = () => loader.classList.remove("preloader");
+const addClass = () => loader.classList.add("loader-hide");
+
 function App() {
   const direction = ['he','ar'].includes(getLanguage()) ? 'rtl' : 'ltr';
-
+  useEffect(() => {
+    showLoader();
+    addClass();
+  }, []);
   return (
     <Router onUpdate={() => window.scrollTo(0, 0)}>
-      <div className="App" dir={direction}>
+      <div className="App" dir={direction} >
           <HeaderTop />
           <Header/>
           <React.StrictMode>
