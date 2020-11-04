@@ -26,7 +26,7 @@ class Footer extends Component{
                                 <Col lg={8} xs={8} className={getLanguage()==='he' || getLanguage()==='ar'?'text-right':'text-left'}>
                                     <h3 className="mb-3">{t('footer.title')}</h3>
                                     <p className="mb-1" >{t('footer.address_title')} : </p>
-                                    <p className="mb-1">info@amkan.com</p>
+                                    <p className="mb-1">info@amkan.ae</p>
                                 </Col>
                                 <Col lg={4} xs={4} className={getLanguage()==='he' || getLanguage()==='ar'?'text-right pr-0 pl-0':'text-left pr-0 pl-0'}>
                                     <ul className={getLanguage()==='he' || getLanguage()==='ar'?'pr-0 mb-0 list-unstyled':'pl-0 mb-0 list-unstyled'}>
