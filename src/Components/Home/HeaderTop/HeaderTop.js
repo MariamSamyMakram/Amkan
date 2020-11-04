@@ -51,9 +51,9 @@ class HeaderTop extends Component{
 
                                         <Dropdown.Menu>
                                             <Dropdown.Item  onClick={this.handleSetLanguage('en')}>{t('headertop.en')}</Dropdown.Item>
-                                            <Dropdown.Item  onClick={this.handleSetLanguage('he')}>{t('headertop.he')}</Dropdown.Item>
                                             <Dropdown.Item  onClick={this.handleSetLanguage('ar')}>{t('headertop.ar')}</Dropdown.Item>
                                             <Dropdown.Item  onClick={this.handleSetLanguage('ch')}>{t('headertop.ch')}</Dropdown.Item>
+                                            <Dropdown.Item  onClick={this.handleSetLanguage('he')}>{t('headertop.he')}</Dropdown.Item>
                                         </Dropdown.Menu>
                                     </Dropdown>
                                 </li>

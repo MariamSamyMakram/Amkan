@@ -2,8 +2,8 @@
     "headertop":{
         "en":"English",
         "ar":"عربى",
-        "he":"Hebrew",
-        "ch":"Chinese"
+        "ch":"Chinese",
+        "he":"Hebrew"
     },
     "header":{
         "home": "الصفحة الرئيسية",
