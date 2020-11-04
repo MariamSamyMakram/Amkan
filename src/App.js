@@ -37,47 +37,47 @@ const addClass = () => loader.classList.add("loader-hide");
 function App() {
   const direction = ['he','ar'].includes(getLanguage()) ? 'rtl' : 'ltr';
   useEffect(() => {
-    // showLoader();
-    // addClass();
+    showLoader();
+    addClass();
   }, []);
-//   return (
-//     <Router onUpdate={() => window.scrollTo(0, 0)}>
-//       <div className="App" dir={direction} >
-//           <HeaderTop />
-//           <Header/>
-//           <React.StrictMode>
-//               {/* Links of pages */}
-//               <Switch>
-//                   <Route path="/contact">
-//                       <Contact />
-//                   </Route>
-//                   <Route path="/clientsPartners">
-//                       <Client />
-//                   </Route>
-//                   <Route path="/team">
-//                       <Team />
-//                   </Route>
-//                   <Route path="/strategy">
-//                       <Strategies />
-//                   </Route>
-//                   <Route path="/chairmanMessage">
-//                       <ChairmanMessage />
-//                   </Route>
-//                   <Route path="/aboutAmkan">
-//                       <AboutAmkan />
-//                   </Route>
-//                   <Route path="/" exact>
-//                       <Home />
-//                   </Route>
-//               </Switch>
-//           </React.StrictMode>
+  return (
+    <Router onUpdate={() => window.scrollTo(0, 0)}>
+      <div className="App" dir={direction} >
+          <HeaderTop />
+          <Header/>
+          <React.StrictMode>
+              {/* Links of pages */}
+              <Switch>
+                  <Route path="/contact">
+                      <Contact />
+                  </Route>
+                  <Route path="/clientsPartners">
+                      <Client />
+                  </Route>
+                  <Route path="/team">
+                      <Team />
+                  </Route>
+                  <Route path="/strategy">
+                      <Strategies />
+                  </Route>
+                  <Route path="/chairmanMessage">
+                      <ChairmanMessage />
+                  </Route>
+                  <Route path="/aboutAmkan">
+                      <AboutAmkan />
+                  </Route>
+                  <Route path="/" exact>
+                      <Home />
+                  </Route>
+              </Switch>
+          </React.StrictMode>
 
-//           {/* Footer */}
-//           <Footer />
-//       </div>
-//   </Router>
+          {/* Footer */}
+          <Footer />
+      </div>
+  </Router>
 
-//   );
+  );
 }
 
 export default translate(App);
