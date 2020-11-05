@@ -20,7 +20,7 @@ class Message extends Component{
                         <Col lg={8} md={8} className={getLanguage()==='he' || getLanguage()==='ar'?'text-right':'text-left'}>
                             <h1 className={getLanguage()==='ar'?'GE_SS mb-4':' times mb-4'}>{t('message.title')}</h1>
                             <div className="body_message">
-                                <p className={getLanguage()==='ar'?'GE_SS':' lota'}>{t('message.p')}</p>
+                                <p className={getLanguage()==='ar'?'GE_SS':' lota'}>{t('message.p1')} <br/>{t('message.p2')}</p>
                                 <h5 className={getLanguage()==='ar'?'GE_SS':' times'}>{t('message.name')}</h5>
                             </div>
                         </Col>

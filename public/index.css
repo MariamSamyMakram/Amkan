@@ -6,7 +6,6 @@
     top: 0;
     left: 0;
     background-color: #000;
-
     
   }
   .preloader img{
@@ -14,18 +13,41 @@
       height: 200px;
       object-fit:contain;
   }
-  /* .loader-hide {
+  .loader-hide {
     display: none;
-  } */
-
-  @keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-
-    to {
-      transform: rotate(359deg);
-    }
   }
+.meter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.meter .bg{
+  width: 700px;
+  height: 40px;
+  background-image: url('./images/Layer.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  margin-bottom: 20px;
+}
+.preloader p{
+  color: #fff;
+  text-align: center;
+}
+
+.bar{
+  animation: bar 1s  linear;
+}
+
+@keyframes bar {
+  from {
+    width: 0px;
+  }
+
+  to {
+    width: 700px;
+  }
+}
+
 
 
