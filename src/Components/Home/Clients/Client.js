@@ -50,15 +50,15 @@ export const Client = [
     },
     {
         "image":"/images/Clients/partner1.png",
-        "url":""
+        "url":"http://www.ehong.ae"
     },
     {
         "image":"/images/Clients/partner2.png",
-        "url":""
+        "url":"https://www.hughesprecisionm.com/"
     },
     {
         "image":"/images/Clients/partner3.png",
-        "url":""
+        "url":"http://www.zdpcc.net"
     },
     
 ];
