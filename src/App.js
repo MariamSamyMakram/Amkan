@@ -36,10 +36,17 @@ import {translate , getLanguage} from 'react-switch-lang';
 
 function App() {
   const direction = ['he','ar'].includes(getLanguage()) ? 'rtl' : 'ltr';
+<<<<<<< HEAD
 //   useEffect(() => {
 //     showLoader();
 //     addClass();
 //   }, []);
+=======
+  // useEffect(() => {
+  //   showLoader();
+  //   addClass();
+  // }, []);
+>>>>>>> f0147fa04d6f199c83c9a24bb258d804b8f793d8
   return (
     <Router onUpdate={() => window.scrollTo(0, 0)}>
       <div className="App" dir={direction} >
