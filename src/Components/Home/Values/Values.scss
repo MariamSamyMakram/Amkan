@@ -29,3 +29,20 @@
         }
     }
 }
+
+@media (max-width: 575.98px){
+    .Values{
+        ul{
+            li{
+                h2{
+                    font-size: 75px;
+                }
+            }
+        }
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}

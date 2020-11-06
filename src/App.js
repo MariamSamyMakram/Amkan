@@ -29,17 +29,17 @@ import Footer from './Components/Home/Footer/Footer';
 import {translate , getLanguage} from 'react-switch-lang';
 
 // loading
-// const loader = document.querySelector(".preloader");
+const loader = document.querySelector(".preloader");
 
-// const showLoader = () => loader.classList.remove("preloader");
-// const addClass = () => loader.classList.add("loader-hide");
+const showLoader = () => loader.classList.remove("preloader");
+const addClass = () => loader.classList.add("loader-hide");
 
 function App() {
   const direction = ['he','ar'].includes(getLanguage()) ? 'rtl' : 'ltr';
-//   useEffect(() => {
-//     showLoader();
-//     addClass();
-//   }, []);
+  useEffect(() => {
+    showLoader();
+    addClass();
+  }, []);
   return (
     <Router onUpdate={() => window.scrollTo(0, 0)}>
       <div className="App" dir={direction} >
