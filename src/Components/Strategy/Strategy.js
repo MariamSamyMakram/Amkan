@@ -22,17 +22,17 @@ class Strategy extends Component{
                         <Col lg={10}>
                             <ul className="mb-0 pl-0 list-unstyled d-block d-md-flex justify-content-between flex-nowrap bd-highlight">
                                 <li className="order-3 p-3 bd-highlight text-center">
-                                    <img src={'images/cash_flow.png'}/>
+                                    <img src={'images/cash_flow.png'} alt={t('strategies.h1_1')}/>
                                     <h5 className={getLanguage()==='ar'?'GE_SS':' lota'}>{t('strategies.h1_1')}</h5>
                                     <p className={getLanguage()==='ar'?'GE_SS':' lota'}>{t('strategies.p1_1')}</p>
                                 </li>
                                 <li className="order-3 p-3 bd-highlight text-center">
-                                    <img src={'images/development.png'}/>
+                                    <img src={'images/development.png'} alt={t('strategies.h1_2')}/>
                                     <h5 className={getLanguage()==='ar'?'GE_SS':' lota'}>{t('strategies.h1_2')}</h5>
                                     <p className={getLanguage()==='ar'?'GE_SS':' lota'}>{t('strategies.p1_2')}</p>                                
                                 </li>
                                 <li className="order-3 p-3 bd-highlight text-center">
-                                    <img src={'images/growth.png'}/>
+                                    <img src={'images/growth.png'} alt={t('strategies.h1_3')}/>
                                     <h5 className={getLanguage()==='ar'?'GE_SS':' lota'}>{t('strategies.h1_3')}</h5>
                                     <p className={getLanguage()==='ar'?'GE_SS':' lota'}>{t('strategies.p1_3')}</p>
                                 </li>

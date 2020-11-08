@@ -17,14 +17,14 @@ class Strategies extends Component{
                         <Col lg={5} md={5}>
                             <img src={'images/strategies.png'} alt={'startegy'}/>
                         </Col>
-                        <Col lg={7} md={7} className="mt-4 mt-md-0 " className={getLanguage()==='he' || getLanguage()==='ar'?'text-right':'text-left'}>
+                        <Col lg={7} md={7}  className={'mt-4 mt-md-0 '+(getLanguage()==='he' || getLanguage()==='ar'?'text-right':'text-left')}>
                             <h1>{t('strategies.title')}</h1>
                             <p>{t('strategies.p')}</p>
                             <ul className="list-unstyled mb-0">
                                 <li className="mb-1">
                                     <Row>
                                         <Col lg={2} xs={3} className="d-flex justify-content-center align-items-center">
-                                            <img src={'images/cash_flow.png'} alt={''} />
+                                            <img src={'images/cash_flow.png'} alt={t('strategies.h1_1')} />
                                         </Col>
                                         <Col lg={9} xs={9}>
                                             <h5>{t('strategies.h1_1')}</h5>
@@ -35,7 +35,7 @@ class Strategies extends Component{
                                 <li className="mb-1">
                                     <Row>
                                         <Col lg={2} xs={3} className="d-flex justify-content-center align-items-center">
-                                            <img src={'images/development.png'} alt={''} />
+                                            <img src={'images/development.png'} alt={t('strategies.h1_2')} />
                                         </Col>
                                         <Col lg={9} xs={9}>
                                             <h5>{t('strategies.h1_2')}</h5>
@@ -45,7 +45,7 @@ class Strategies extends Component{
                                 <li className="mb-1">
                                     <Row>
                                         <Col lg={2} xs={3} className="d-flex justify-content-center align-items-center">
-                                            <img src={'images/growth.png'} alt={''} />
+                                            <img src={'images/growth.png'} alt={t('strategies.h1_3')} />
                                         </Col>
                                         <Col lg={9} xs={9}>
                                             <h5>{t('strategies.h1_3')}</h5>

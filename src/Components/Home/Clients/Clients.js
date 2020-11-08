@@ -91,7 +91,7 @@ class Clients extends Component{
                                     Client.map((item ,key)=>{
                                         return(
                                             <div key={key}>
-                                                <a href={item.url}  target="_blank"><img src={item.image} alt={'clients'}/></a>
+                                                <a href={item.url}  target="_blank" rel="noreferrer" ><img src={item.image} alt={'clients'}/></a>
                                             </div>
                                         )
                                     })

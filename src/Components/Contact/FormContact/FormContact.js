@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Container ,Row ,Col ,Form ,Button, FormControl} from "react-bootstrap";
+import { Container ,Row ,Col ,Form ,Button} from "react-bootstrap";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhoneAlt , faEnvelope , faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope} from '@fortawesome/free-solid-svg-icons';
 
 // style
 import './FormContact.scss';
@@ -31,7 +31,7 @@ class FormContact extends Component{
                                 <li className={getLanguage()==='ar'?'GE_SS':'lota'}>
                                     <Row>
                                         <Col lg={2} xs={4}><div className="square"><FontAwesomeIcon icon={faEnvelope}/></div></Col>
-                                        <Col lg={10} xs={8} className="d-flex justify-content-start align-items-center"><a href="#">info@amkan.ae</a></Col>
+                                        <Col lg={10} xs={8} className="d-flex justify-content-start align-items-center"><a href="mailto:info@amkan.ae">info@amkan.ae</a></Col>
                                     </Row>
                                 </li>
                                 {/* <li>
@@ -42,7 +42,7 @@ class FormContact extends Component{
                                 </li> */}
                             </ul>
                         </Col>
-                        <Col lg={5} md={6} className="mt-5" className={getLanguage()==='ar'?'GE_SS':'lota'}>
+                        <Col lg={5} md={6} className={(getLanguage()==='ar'?'GE_SS':'lota') + ' mt-5'}>
                             <Form>
                                 <Form.Group controlId="formBasicEmail">
                                     <Form.Control type="name" placeholder={t('contact.name')} />

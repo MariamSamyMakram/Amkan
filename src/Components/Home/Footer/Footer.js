@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Container ,Row ,Col ,InputGroup ,FormControl} from 'react-bootstrap';
+import {Container ,Row ,Col} from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
 import {NavLink} from "react-router-dom";
@@ -21,7 +21,7 @@ class Footer extends Component{
                 </div>
                 <Container className="pt-5">
                     <Row>
-                        <Col lg={4} md={4} className="mb-2 mb-md-0">
+                        <Col lg={8} md={4} className="mb-2 mb-md-0">
                             <Row>
                                 <Col lg={8} xs={8} className={getLanguage()==='he' || getLanguage()==='ar'?'text-right':'text-left'}>
                                     <h3 className="mb-3">{t('footer.title')}</h3>
@@ -42,26 +42,27 @@ class Footer extends Component{
                             </Row>
                         </Col>
                         <Col lg={4}  md={4} className="text-center mb-2 mb-md-0">
-                            <a target="_blank" href="https://www.linkedin.com/company/amkan-investments/"><FontAwesomeIcon icon={faLinkedinIn}/></a>
+                            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/amkan-investments/"><FontAwesomeIcon icon={faLinkedinIn}/></a>
                             <p className="mt-3">
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 {t('footer.copyright1')}<a href="#">{t('footer.copyright2')}</a>{t('footer.copyright3')}
                             </p>
                         </Col>
-                        <Col lg={4} md={4} className="mb-2 mb-md-0" className={getLanguage()==='he' || getLanguage()==='ar'?'text-right':'text-left'}>
-                            <p>{t('footer.p')}</p>
+                        {/*<Col lg={4} md={4} className={(getLanguage()==='he' || getLanguage()==='ar'?'text-right':'text-left')+' mb-2 mb-md-0'}>*/}
+                        {/*    <p>{t('footer.p')}</p>*/}
 
-                            <InputGroup className="mb-3">
-                                <FormControl
-                                    placeholder={t('footer.email')}
-                                    aria-label="EMAIL ADDRESS"
-                                    aria-describedby="basic-addon2"
-                                />
-                                <InputGroup.Append>
-                                    <InputGroup.Text id="basic-addon2">{t('footer.subscirbe')}</InputGroup.Text>
-                                </InputGroup.Append>
-                            </InputGroup>
-                            
-                        </Col>
+                        {/*    <InputGroup className="mb-3">*/}
+                        {/*        <FormControl*/}
+                        {/*            placeholder={t('footer.email')}*/}
+                        {/*            aria-label="EMAIL ADDRESS"*/}
+                        {/*            aria-describedby="basic-addon2"*/}
+                        {/*        />*/}
+                        {/*        <InputGroup.Append>*/}
+                        {/*            <InputGroup.Text id="basic-addon2">{t('footer.subscirbe')}</InputGroup.Text>*/}
+                        {/*        </InputGroup.Append>*/}
+                        {/*    </InputGroup>*/}
+                        {/*    */}
+                        {/*</Col>*/}
                     </Row>
                 </Container>
             </section>
