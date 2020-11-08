@@ -17,9 +17,6 @@ class Body extends Component{
                         <Col lg={1}></Col>
                         <Col lg={10} className="text-center p-5">
                             <h1 className={getLanguage()==='ar'?'GE_SS':' times'}>{t('team.title')}</h1>
-                            <p  className={getLanguage()==='ar'?'GE_SS':'lota'}>
-                            {t('team.p')}
-                            </p>
                         </Col>
                         <Col lg={1}></Col>
                         <Col lg={12}>
@@ -30,6 +27,9 @@ class Body extends Component{
                                             <h2 className={getLanguage()==='he' || getLanguage() === 'ar'?'text-right GE_SS':'text-left times'}><b>{t('team.name1')}</b></h2>
                                             <h4 className={getLanguage()==='he' || getLanguage() === 'ar'?'text-right GE_SS':'text-left times'}> {t('team.job1')}</h4>
                                             <p  className={getLanguage()==='ar'?'GE_SS text-justify mt-5':'lota text-justify mt-5'}>
+                                                <p  className={getLanguage()==='ar'?'GE_SS':'lota'}>
+                                                    {t('team.p')}
+                                                </p>
                                             {t('team.p1')}
                                             </p>
                                         </Col>
