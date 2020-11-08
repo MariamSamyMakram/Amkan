@@ -16,7 +16,7 @@ class Strategy extends Component{
                     <Row>
                         <Col lg={12} className="text-center pt-md-5 mb-5">
                             <h1 className={getLanguage()==='ar'?'GE_SS':' times'}>{t('strategies.title')}</h1>
-                            <p className={getLanguage()==='ar'?'GE_SS':' lota'}>{t('strategies.p')}</p>
+                            <p className={getLanguage()==='ar'?'GE_SS':' lota'}>{t('strategies.p1')}<br/>{t('strategies.p2')}</p>
                         </Col>
                         <Col lg={1}></Col>
                         <Col lg={10}>
