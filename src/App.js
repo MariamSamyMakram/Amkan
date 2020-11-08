@@ -50,9 +50,6 @@ function App() {
           <React.StrictMode>
               {/* Links of pages */}
               <Switch>
-                  <Route path="/error404">
-                      <Error404 />
-                  </Route>
                   <Route path="/contact">
                       <Contact />
                   </Route>
@@ -73,6 +70,9 @@ function App() {
                   </Route>
                   <Route path="/" exact>
                       <Home />
+                  </Route>
+                  <Route path="/">
+                      <Error404 />
                   </Route>
               </Switch>
           </React.StrictMode>
