@@ -21,12 +21,14 @@ import Strategies from './Pages/Strategies';
 import Team from './Pages/Team';
 import Contact from './Pages/Contact';
 import Client from './Pages/Client';
+import Error from './Pages/Erroe404';
 
 
 // Footer
 import Footer from './Components/Home/Footer/Footer';
 
 import {translate , getLanguage} from 'react-switch-lang';
+import Error404 from './Pages/Erroe404';
 
 // loading
 const loader = document.querySelector(".preloader");
@@ -48,6 +50,9 @@ function App() {
           <React.StrictMode>
               {/* Links of pages */}
               <Switch>
+                  <Route path="/error404">
+                      <Error404 />
+                  </Route>
                   <Route path="/contact">
                       <Contact />
                   </Route>

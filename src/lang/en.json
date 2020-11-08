@@ -101,5 +101,8 @@
         "email":"Email Address",
         "message":"Message",
         "send":"Send"
+    },
+    "error":{
+        "message":"Sorry, we can't find that page!"
     }
 }
