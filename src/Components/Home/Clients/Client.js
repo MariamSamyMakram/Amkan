@@ -37,11 +37,11 @@ export const Client = [
         "url":"https://www.abudhabiairport.ae/en"
     },
     {
-        "image":"/images/Clients/client15.png",
-        "url":"https://www.sharjahcustoms.gov.ae/"
+        "image":"/images/Clients/client19.png",
+        "url":"https://www.mohap.gov.ae/ar/Pages/default.aspx"
     },
     {
-        "image":"/images/Clients/client16.svg",
+        "image":"/images/Clients/client16.png",
         "url":"https://dpwglobalprod.azureedge.net/"
     },
     {
@@ -53,12 +53,12 @@ export const Client = [
         "url":"http://www.ehong.ae"
     },
     {
-        "image":"/images/Clients/partner2.png",
-        "url":"https://www.hughesprecisionm.com/"
+        "image":"/images/Clients/client17.png",
+        "url":"https://www.dubaicustoms.gov.ae/ar/Pages/default.aspx/"
     },
     {
-        "image":"/images/Clients/partner3.png",
-        "url":"http://www.zdpcc.net"
+        "image":"/images/Clients/client18.gif",
+        "url":"https://www.emiratesnbd.com/en/"
     },
     
 ];
