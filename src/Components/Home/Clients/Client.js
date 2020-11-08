@@ -1,6 +1,10 @@
 
 export const Client = [
     {
+        "image":"/images/Clients/client1.png",
+        "url":"https://www.adnoc.ae/"
+    },
+    {
         "image":"/images/Clients/client7.png",
         "url":"https://www.rcuae.ae/"
     },
@@ -19,10 +23,6 @@ export const Client = [
     {
         "image":"/images/Clients/client10.png",
         "url":"https://alec.ae/"
-    },
-    {
-        "image":"/images/Clients/client1.png",
-        "url":"https://www.adnoc.ae/"
     },
     {
         "image":"/images/Clients/client11.svg",
