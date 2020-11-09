@@ -86,18 +86,18 @@ class Clients extends Component{
                             <p className={getLanguage()==='ar'?'GE_SS':'lota'}>{t('clients.p')}</p>
                         </Col>
                         <Col lg={12}>
-                            <Slider {...settings}>
+                            <Row>
                                 {
                                     Client.map((item ,key)=>{
                                         return(
-                                            <div key={key}>
+                                            <Col lg={3} className="mb-4" key={key}>
                                                 <a href={item.url}  target="_blank" rel="noreferrer" ><img src={item.image} alt={'clients'}/></a>
-                                            </div>
+                                            </Col>
                                         )
                                     })
                                 }
 
-                            </Slider>
+                            </Row>
                         </Col>
                     </Row>
                 </Container>
