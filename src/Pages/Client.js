@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import DocumentTitle from 'react-document-title';
 
 // section
 import Clients from '../Components/Home/Clients/Clients';
@@ -8,13 +9,14 @@ import Clients from '../Components/Home/Clients/Clients';
 class Client extends Component{
     render(){
         return(
-            <section className="lion_bg pt-5 pb-5">
-                <br/>
-                <br/>
-                <br/>
-                <Clients />
-                {/* <Partner /> */}
-            </section>
+            <DocumentTitle title={'Amkan | Clients And Partners'}>
+                <section className="lion_bg pt-5 pb-5">
+                    <br/>
+                    <br/>
+                    <br/>
+                    <Clients />
+                </section>
+            </DocumentTitle>
         );
     }
 }
