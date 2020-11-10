@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {Container ,Row ,Col} from 'react-bootstrap';
-import Slider from "react-slick";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleLeft , faAngleRight} from '@fortawesome/free-solid-svg-icons';
+// import Slider from "react-slick";
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faAngleLeft , faAngleRight} from '@fortawesome/free-solid-svg-icons';
 
 // style
 import './Clients.scss';
@@ -12,38 +12,39 @@ import {translate ,getLanguage} from 'react-switch-lang';
 // json 
 import {Client} from './Client';
 
-function SampleNextArrow(props) {
-    const { onClick } = props;
-    return (
-        <div className="next" onClick={onClick}>
-            <FontAwesomeIcon icon={faAngleRight}/>
-        </div>  
-    );
-}
-  
-function SamplePrevArrow(props) {
-    const { onClick } = props;
-    return (
-        <div className="prev" onClick={onClick}>
-            <FontAwesomeIcon icon={faAngleLeft}/>
-        </div>    
-    );
-}
+// function SampleNextArrow(props) {
+//     const { onClick } = props;
+//     return (
+//         <div className="next" onClick={onClick}>
+//             <FontAwesomeIcon icon={faAngleRight}/>
+//         </div>
+//     );
+// }
+//
+// function SamplePrevArrow(props) {
+//     const { onClick } = props;
+//     return (
+//         <div className="prev" onClick={onClick}>
+//             <FontAwesomeIcon icon={faAngleLeft}/>
+//         </div>
+//     );
+// }
 
 class Clients extends Component{
-    constructor(props) {
-        super(props);
-        this.next = this.next.bind(this);
-        this.previous = this.previous.bind(this);
-    }
-    next() {
-        this.Slider.slickNext();
-    }
-    previous() {
-        this.Slider.slickPrev();
-    }
+    // constructor(props) {
+    //     super(props);
+    //     this.next = this.next.bind(this);
+    //     this.previous = this.previous.bind(this);
+    // }
+    // next() {
+    //     this.Slider.slickNext();
+    // }
+    // previous() {
+    //     this.Slider.slickPrev();
+    // }
     render(){
-        const { t} = this.props
+        const { t } = this.props
+        /*
         const settings = {
             dots: false,
             infinite: true,
@@ -77,6 +78,7 @@ class Clients extends Component{
                   }
             ]
         };
+        */
         return(
             <section className="clients pt-5 pb-5">
                 <Container>
@@ -90,7 +92,7 @@ class Clients extends Component{
                                 {
                                     Client.map((item ,key)=>{
                                         return(
-                                            <Col lg={3} className="mb-4" key={key}>
+                                            <Col lg={3} md={4} sm={6} xs={12} className="mb-4" key={key}>
                                                 <a href={item.url}  target="_blank" rel="noreferrer" ><img src={item.image} alt={'clients'}/></a>
                                             </Col>
                                         )
