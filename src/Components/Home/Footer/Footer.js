@@ -23,12 +23,12 @@ class Footer extends Component{
                     <Row>
                         <Col lg={8} md={4} className="mb-2 mb-md-0">
                             <Row>
-                                <Col lg={8} xs={8} className={getLanguage()==='he' || getLanguage()==='ar'?'text-right':'text-left'}>
+                                <Col lg={6} xs={8} className={getLanguage()==='he' || getLanguage()==='ar'?'text-right':'text-left'}>
                                     <h3 className="mb-3">{t('footer.title')}</h3>
                                     <p className="mb-1" >{t('footer.email')} : </p>
                                     <p className="mb-1">info@amkan.ae</p>
                                 </Col>
-                                <Col lg={4} xs={4} className={getLanguage()==='he' || getLanguage()==='ar'?'text-right pr-0 pl-0':'text-left pr-0 pl-0'}>
+                                <Col lg={6} xs={4} className={getLanguage()==='he' || getLanguage()==='ar'?'text-right pr-0 pl-0':'text-left pr-0 pl-0'}>
                                     <ul className={getLanguage()==='he' || getLanguage()==='ar'?'pr-0 mb-0 list-unstyled':'pl-0 mb-0 list-unstyled'}>
                                         <li className="mb-1"><NavLink exact to="/">{t('header.home')}</NavLink></li>
                                         <li className="mb-1"><NavLink  to="/aboutAmkan">{t('header.about_amkan')}</NavLink ></li>
