@@ -60,5 +60,9 @@ export const Client = [
         "image":"/images/Clients/client18.gif",
         "url":"https://www.emiratesnbd.com/en/"
     },
+    {
+        "image":"/images/Clients/client20.jfif",
+        "url":"#"
+    },
     
 ];

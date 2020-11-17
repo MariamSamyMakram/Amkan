@@ -24,7 +24,6 @@ class Footer extends Component{
                         <Col lg={8} md={4} className="mb-2 mb-md-0">
                             <Row>
                                 <Col lg={6} xs={8} className={getLanguage()==='he' || getLanguage()==='ar'?'text-right':'text-left'}>
-                                    <h3 className="mb-3">{t('footer.title')}</h3>
                                     <p className="mb-1" >{t('footer.email')} : </p>
                                     <p className="mb-1">info@amkan.ae</p>
                                 </Col>
@@ -48,21 +47,6 @@ class Footer extends Component{
                                 {t('footer.copyright1')}<a href="#">{t('footer.copyright2')}</a>{t('footer.copyright3')}
                             </p>
                         </Col>
-                        {/*<Col lg={4} md={4} className={(getLanguage()==='he' || getLanguage()==='ar'?'text-right':'text-left')+' mb-2 mb-md-0'}>*/}
-                        {/*    <p>{t('footer.p')}</p>*/}
-
-                        {/*    <InputGroup className="mb-3">*/}
-                        {/*        <FormControl*/}
-                        {/*            placeholder={t('footer.email')}*/}
-                        {/*            aria-label="EMAIL ADDRESS"*/}
-                        {/*            aria-describedby="basic-addon2"*/}
-                        {/*        />*/}
-                        {/*        <InputGroup.Append>*/}
-                        {/*            <InputGroup.Text id="basic-addon2">{t('footer.subscirbe')}</InputGroup.Text>*/}
-                        {/*        </InputGroup.Append>*/}
-                        {/*    </InputGroup>*/}
-                        {/*    */}
-                        {/*</Col>*/}
                     </Row>
                 </Container>
             </section>
