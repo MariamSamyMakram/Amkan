@@ -16,7 +16,7 @@ class Strategy extends Component {
                     <Row>
                         <Col lg={12} className="text-center pt-md-5 mb-5">
                             <h1 className={getLanguage() === 'ar' ? 'GE_SS' : ' times'}>{t('strategies.title')}</h1>
-                            <p className={getLanguage() === 'ar' ? 'GE_SS' : ' lota'}>{t('strategies.p1')}<br/>{t('strategies.p2')}
+                            <p className={getLanguage() === 'ar' ? 'GE_SS p-arabic' : ' lota'}>{t('strategies.p1')}<br/>{t('strategies.p2')}
                             </p>
                         </Col>
                         <Col lg={12}>
@@ -25,21 +25,21 @@ class Strategy extends Component {
                                     <div className="strategy-item">
                                         <img src={'images/cash_flow.png'} alt={t('strategies.h1_1')}/>
                                         <h5 className={getLanguage() === 'ar' ? 'GE_SS' : ' lota'}>{t('strategies.h1_1')}</h5>
-                                        <p className={getLanguage() === 'ar' ? 'GE_SS' : ' lota'}>{t('strategies.p1_1')}</p>
+                                        <p className={getLanguage() === 'ar' ? 'GE_SS p-arabic' : ' lota'}>{t('strategies.p1_1')}</p>
                                     </div>
                                 </li>
                                 <li className="col-sm-4 mb-3 text-center">
                                     <div className="strategy-item">
                                         <img src={'images/development.png'} alt={t('strategies.h1_2')}/>
                                         <h5 className={getLanguage() === 'ar' ? 'GE_SS' : ' lota'}>{t('strategies.h1_2')}</h5>
-                                        <p className={getLanguage() === 'ar' ? 'GE_SS' : ' lota'}>{t('strategies.p1_2')}</p>
+                                        <p className={getLanguage() === 'ar' ? 'GE_SS p-arabic' : ' lota'}>{t('strategies.p1_2')}</p>
                                     </div>
                                 </li>
                                 <li className="col-sm-4 mb-3 text-center">
                                     <div className="strategy-item">
                                         <img src={'images/growth.png'} alt={t('strategies.h1_3')}/>
                                         <h5 className={getLanguage() === 'ar' ? 'GE_SS' : ' lota'}>{t('strategies.h1_3')}</h5>
-                                        <p className={getLanguage() === 'ar' ? 'GE_SS' : ' lota'}>{t('strategies.p1_3')}</p>
+                                        <p className={getLanguage() === 'ar' ? 'GE_SS p-arabic' : ' lota'}>{t('strategies.p1_3')}</p>
                                     </div>
                                 </li>
                             </ul>

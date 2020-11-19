@@ -1,0 +1,9 @@
+{
+    "require": {
+        "swiftmailer/swiftmailer": "@stable"
+    },
+    "config": {
+      "preferred-install": "dist"
+    },
+    "prefer-stable": true
+}
