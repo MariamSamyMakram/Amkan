@@ -20,3 +20,7 @@ public/storage
 .php_cs.cache
 /.git
 project_files/
+ehong.ae/
+.ftpquota
+.well-known/
+cgi-bin/

@@ -11,7 +11,7 @@ CONF_DIR='sync'
 # 4 => LARAVEL_FOLDER (e.g.: web, Site)
 # 5 => PHP_BIN (e.g.: /usr/local/bin/php -d memery_limit=512M)
 # 6 => PHP_ARTISAN
-declare -a dev=('master_uahwuzkmmh' '157.245.47.210' '22' '/home/master/applications/rzyeutsskh/public_html' '../public_html' 'php' '/home/master/applications/rzyeutsskh/public_html/artisan')
+declare -a dev=('amkanae' '185.243.77.100' '2252' '/home/amkanae/public_html' '../public_html' 'php' '/home/amkanae/public_html/artisan')
 declare -a ENV
 
 HELP=0
@@ -104,22 +104,22 @@ then
     ACTION='Downloading from'
     SRC="${ENV[0]}@${ENV[1]}:${ENV[3]}/"
     if test "$ENVIRONMENT" = 'prod'; then
-      DST=site/
+      DST=build/
     else
-      DST=.
+      DST=build/
     fi
 
   else
     ACTION='Deploying to'
     case $ENVIRONMENT in
         prod|PROD|Prod)
-          SRC=./site/
+          SRC=./build/
         ;;
         stage|STAGE|Stage)
           SRC=.
         ;;
         *)
-          SRC=.
+          SRC=./build/
         ;;
     esac
 
