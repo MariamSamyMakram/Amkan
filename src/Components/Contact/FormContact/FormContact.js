@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Container ,Row ,Col ,Form ,Button} from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope} from '@fortawesome/free-solid-svg-icons';
+import Loader from 'react-loader-spinner';
+
 // style
 import './FormContact.scss';
 import PropTypes from 'prop-types';
@@ -17,7 +19,10 @@ class FormContact extends Component {
         this.state = {
             name: '',
             email: '',
-            message: ''
+            message: '',
+            loading: false,
+            success:false,
+            errors:[]
         };
         this.handleChange = this.handleChange.bind(this);
         this.sendContactRequest = this.sendContactRequest.bind(this);
@@ -32,19 +37,47 @@ class FormContact extends Component {
 
     sendContactRequest(event) {
         event.preventDefault();
+        this.setState({
+            loading:true
+        });
         const client = new Client();
         const bodyFormData = new FormData();
         bodyFormData.append('name', this.state.name)
         bodyFormData.append('email', this.state.email)
         bodyFormData.append('message', this.state.message)
         client.post('contact_us.php', bodyFormData).then((data) => {
+            this.setState({
+                loading:false,
+                success: data.data.success,
+                errors : data.data.errors
+            })
+            if(data.data.success){
+                this.setState({
+                    name: '',
+                    email: '',
+                    message: '',
+                })
+            }
         })
     }
     render(){
         const { t } = this.props;
-        const { name, email, message } = this.state;
+        const { name, email, message ,loading , success ,errors} = this.state;
         return(
             <section className="FormContact pt-5 pb-5 mt-md-5">
+                {
+                    loading ? 
+                    <Loader
+                        type="BallTriangle"
+                        color="#dab469"
+                        height={100}
+                        width={100}
+                        timeout={100000} 
+                        className="load_spinner"
+                
+                    /> : ''
+                }
+                
                 <Container>
                     <Row>
                         <Col lg={1}></Col>
@@ -61,6 +94,21 @@ class FormContact extends Component {
                         </Col>
                         <Col lg={5} md={6} className={(getLanguage()==='ar'?'GE_SS':'lota') + ' mt-5'}>
                             <Form onSubmit={this.sendContactRequest}>
+                                {
+                                    success ? 
+                                        <div className="alert alert-success">
+                                            {t('contact-us.success')}
+                                        </div>: ''
+                                }
+                                {
+                                    errors.legnth ? 
+                                        <ul className="alert alert-danger">
+                                            {errors.map((item)=>{
+                                                return <li>{item}</li>
+                                            })}
+                                        </ul> : ''
+                                }
+                                
                                 <Form.Group controlId="formBasicEmail">
                                     <Form.Control type="text" required={'required'} name={'name'}  placeholder={t('contact.name')} onChange={this.handleChange}  value={name}/>
                                 </Form.Group>

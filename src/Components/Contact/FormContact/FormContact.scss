@@ -1,6 +1,18 @@
 @import './../../ColorFonts.scss';
 
 .FormContact{
+    .load_spinner{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.8);
+        z-index: 99;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     h1{
         color: $yollow;
         text-transform: uppercase;
@@ -36,7 +48,7 @@
     }
 
     form{
-        padding: 47px 35px;
+        padding: 35px 24px;
         background-color:rgba($color: $black, $alpha: 0.7);
         border-radius: 5px;
         .form-control {

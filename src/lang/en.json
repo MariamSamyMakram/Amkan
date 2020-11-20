@@ -105,5 +105,8 @@
     },
     "error":{
         "message":"Sorry, we can't find that page!"
+    },
+    "contact-us":{
+        "success":"Thanks for contact request."
     }
 }
